@@ -1,0 +1,1 @@
+UPDATE "T0102_Agendamento" SET "StConfirmado" = TRUE WHERE "IdAgendamento" = __agendamento

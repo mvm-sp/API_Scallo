@@ -1,0 +1,89 @@
+00:00:09 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Parâmetros recebidos: id_atendimento=89 }
+00:00:09 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Query:
+ UPDATE "T0102_Agendamento" SET "StConfirmado" = TRUE WHERE "IdAgendamento" = 89}
+00:00:10 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Recieved:
+ contato=89 
+ Returning : 
+"[{\"mensagem_sucesso\": \"Agendamento confirmado com sucesso.\"}]"}
+00:02:44 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Parâmetros recebidos: id_atendimento=89 }
+00:02:44 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Query:
+ UPDATE "T0102_Agendamento" SET "StConfirmado" = TRUE WHERE "IdAgendamento" = 89}
+00:02:45 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Recieved:
+ contato=89 
+ Returning : 
+"[{\"mensagem_sucesso\": \"Agendamento confirmado com sucesso.\"}]"}
+00:02:51 - Called /Futurofone/atendimentos/cancelado?id_atendimento=89: 
+{Parâmetros recebidos: id_atendimento=89 }
+00:02:51 - Called /Futurofone/atendimentos/cancelado?id_atendimento=89: 
+{Query:
+ UPDATE "T0102_Agendamento" SET "StCancelado" = TRUE WHERE "IdAgendamento" = 89}
+00:02:51 - Called /Futurofone/atendimentos/cancelado?id_atendimento=89: 
+{Recieved:
+ contato=89 
+ Returning : 
+"[{\"mensagem_sucesso\": \"Agendamento cancelado com sucesso.\"}]"}
+00:15:43 - Called /Futurofone/clientes?contato=21987647821: 
+{Iniciando Futurofone/clientes}
+00:15:43 - Called /Futurofone/clientes?contato=21987647821: 
+{Parâmetros recebidos: contato=21987647821 }
+00:15:43 - Called /Futurofone/clientes?contato=21987647821: 
+{Query:
+ SELECT row_to_json(x) AS Pacientes
+	FROM (SELECT 
+	      "IdPaciente" as  Id,
+	      "NmPaciente" as  Nome,
+	      "DtNascimento" as  data_nascimento
+	      from "T0199_Paciente"  P INNER JOIN "T0000_Contato" C
+	      ON P."IdPaciente"::varchar = C."IdRegistro"
+	      AND C."IdEntidadeNegocio" = '0199015'
+          where  ( C."CdDDD1" = left('21987647821',2) AND  REPLACE(C."NrTelefone1", '-', '') = right('21987647821',9))
+           OR    ( C."CdDDD2" = left('21987647821',2) AND  REPLACE(C."NrTelefone2", '-', '') = right('21987647821',9))       
+           OR    ( C."CdDDD3" = left('21987647821',2) AND  REPLACE(C."NrTelefone3", '-', '') = right('21987647821',9))
+                 ) x;}
+00:16:55 - Called /Futurofone/clientes?contato=21987647821: 
+{Iniciando Futurofone/clientes}
+00:16:55 - Called /Futurofone/clientes?contato=21987647821: 
+{Parâmetros recebidos: contato=21987647821 }
+00:16:55 - Called /Futurofone/clientes?contato=21987647821: 
+{Query:
+ SELECT row_to_json(x) AS Pacientes
+	FROM (SELECT 
+	      "IdPaciente" as  Id,
+	      "NmPaciente" as  Nome,
+	      "DtNascimento" as  data_nascimento
+	      from "T0199_Paciente"  P INNER JOIN "T0000_Contato" C
+	      ON P."IdPaciente"::varchar = C."IdRegistro"
+	      AND C."IdEntidadeNegocio" = '0199015'
+          where  ( C."CdDDD1" = left('21987647821',2) AND  REPLACE(C."NrTelefone1", '-', '') = right('21987647821',9))
+           OR    ( C."CdDDD2" = left('21987647821',2) AND  REPLACE(C."NrTelefone2", '-', '') = right('21987647821',9))       
+           OR    ( C."CdDDD3" = left('21987647821',2) AND  REPLACE(C."NrTelefone3", '-', '') = right('21987647821',9))
+                 ) x;}
+00:18:36 - Called /Futurofone/clientes?contato=21987647821: 
+{Iniciando Futurofone/clientes}
+00:18:36 - Called /Futurofone/clientes?contato=21987647821: 
+{Parâmetros recebidos: contato=21987647821 }
+00:18:36 - Called /Futurofone/clientes?contato=21987647821: 
+{Query:
+ SELECT row_to_json(x) AS Pacientes
+	FROM (SELECT 
+	      "IdPaciente" as  Id,
+	      "NmPaciente" as  Nome,
+	      "DtNascimento" as  data_nascimento
+	      from "T0199_Paciente"  P INNER JOIN "T0000_Contato" C
+	      ON P."IdPaciente"::varchar = C."IdRegistro"
+	      AND C."IdEntidadeNegocio" = '0199015'
+          where  ( C."CdDDD1" = left('21987647821',2) AND  REPLACE(C."NrTelefone1", '-', '') = right('21987647821',9))
+           OR    ( C."CdDDD2" = left('21987647821',2) AND  REPLACE(C."NrTelefone2", '-', '') = right('21987647821',9))       
+           OR    ( C."CdDDD3" = left('21987647821',2) AND  REPLACE(C."NrTelefone3", '-', '') = right('21987647821',9))
+                 ) x;}
+00:18:37 - Called /Futurofone/clientes?contato=21987647821: 
+{Recieved:
+ contato=21987647821 
+ Returning : 
+"[{\"id\":410267,\"nome\":\"LUPERCIO DOS SANTOS MONTEIRO\",\"data_nascimento\":\"1963-10-09\"}]"}

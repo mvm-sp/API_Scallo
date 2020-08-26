@@ -1,0 +1,8 @@
+17:08:03 - Called /Futurofone/CampanhaContatoListar: 
+{Parâmetros recebidos:  }
+17:08:03 - Called /Futurofone/CampanhaContatoListar: 
+{Erro : Exception: Lendo parâmetro da QueryString... in C:\Apache24\htdocs\rest\api\common.php:151
+Stack trace:
+#0 C:\Apache24\htdocs\rest\api\CampanhaContatoListar.php(9): parseParameterQueryType()
+#1 {main}
+}

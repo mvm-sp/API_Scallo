@@ -1,0 +1,25 @@
+{
+    "Ligacao": {
+        "uniqueid": "000001.01",
+        "uuid": "000001.02",
+        "direcao": "entrada",
+        "src": "11981081011",
+        "dst": "1142106262",
+        "calldate": "2020-04-08 12:00:00",
+        "calldateend": "2020-04-08 12:01:00",
+        "status": "answer",
+        "ura": "Principal,Agendamento",
+        "fila": "principal",
+        "classificacao": "Normal",
+        "cpf": "19119119100",
+        "src_cidade": "São Paulo",
+        "src_uf": "SP",
+        "src_ramal": "0001",
+        "src_agente": "2001",
+        "dst_ramal": "0002",
+        "dst_agente": "2002"
+    },
+    "Options": {
+        "key": "81245e4778577e3315dbe49ace4443e5"
+    }
+}

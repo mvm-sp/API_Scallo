@@ -1,0 +1,1498 @@
+16:50:03 - Called /Futurofone/SMSReceber: 
+{Parâmetros recebidos: {
+	"telefone": "1199999999",
+	"porta": "3000",
+	"mensagem": "olá",
+	"dataHora": "2020-03-13 15:59:00"
+}
+
+ }
+16:50:03 - Called /Futurofone/SMSReceber: 
+{telefone = 1199999999
+porta = 3000
+mensagem = olá
+dataHora = 2020-03-13 15:59:00
+}
+17:09:29 - Called /Futurofone/clientes?contato=3138016805: 
+{Parâmetros recebidos: contato=3138016805 }
+17:11:28 - Called /Futurofone/clientes?contato=3138016805: 
+{Parâmetros recebidos: contato=3138016805 }
+17:15:02 - Called /Futurofone/clientes?contato=3138016805: 
+{Parâmetros recebidos: contato=3138016805 }
+17:15:51 - Called /Futurofone/clientes?contato=3138016805: 
+{Parâmetros recebidos: contato=3138016805 }
+17:17:21 - Called /Futurofone/clientes?contato=3138016805: 
+{Parâmetros recebidos: contato=3138016805 }
+17:17:21 - Called /Futurofone/clientes?contato=3138016805: 
+{Recieved:
+ codigo=3138016805 
+ Returning : 
+[{"id":"94825","nome":"Robertto Silva","data_nascimento":"10\/04\/1997"}]}
+17:22:08 - Called /Futurofone/PainelClienteListar: 
+{Parâmetros recebidos: {
+	"telefone": "111"
+}
+
+ }
+17:22:40 - Called /Futurofone/PainelClienteListar: 
+{Parâmetros recebidos: {
+	"telefone": "111"
+}
+
+ }
+18:00:02 - Called /Futurofone/clientes?contato=3138016805: 
+{Parâmetros recebidos: contato=3138016805 }
+18:00:51 - Called /Futurofone/clientes?contato=3138016805: 
+{Parâmetros recebidos: contato=3138016805 }
+18:02:36 - Called /Futurofone/clientes?contato=3138016805: 
+{Parâmetros recebidos: contato=3138016805 }
+18:03:42 - Called /Futurofone/clientes?contato=3138016805: 
+{Parâmetros recebidos: contato=3138016805 }
+18:05:21 - Called /Futurofone/clientes?contato=3138016805: 
+{Parâmetros recebidos: contato=3138016805 }
+18:05:21 - Called /Futurofone/clientes?contato=3138016805: 
+{Query:
+ 3138016805}
+18:08:02 - Called /Futurofone/clientes?contato=3138016805: 
+{Parâmetros recebidos: contato=3138016805 }
+18:08:02 - Called /Futurofone/clientes?contato=3138016805: 
+{Query:
+ SELECT row_to_json(x) AS Pacientes
+	FROM (SELECT 
+	      "IdPaciente" as  Id,
+	      "NmPaciente" as  Nome,
+	      "DtNascimento" as  data_nascimento
+	      from "T0199_Paciente"  P INNER JOIN "T0000_Contato" C
+	      ON P."IdPaciente"::varchar = C."IdRegistro"
+	      AND C."IdEntidadeNegocio" = '0199015'
+          where  ( C."CdDDD1" = left('3138016805',2) AND  REPLACE(C."NrTelefone1", '-', '') = right('3138016805',9))
+           OR    ( C."CdDDD2" = left('3138016805',2) AND  REPLACE(C."NrTelefone2", '-', '') = right('3138016805',9))       
+           OR    ( C."CdDDD3" = left('3138016805',2) AND  REPLACE(C."NrTelefone3", '-', '') = right('3138016805',9))
+                 ) x;}
+18:08:38 - Called /Futurofone/clientes?contato=11998697292: 
+{Parâmetros recebidos: contato=11998697292 }
+18:08:38 - Called /Futurofone/clientes?contato=11998697292: 
+{Query:
+ SELECT row_to_json(x) AS Pacientes
+	FROM (SELECT 
+	      "IdPaciente" as  Id,
+	      "NmPaciente" as  Nome,
+	      "DtNascimento" as  data_nascimento
+	      from "T0199_Paciente"  P INNER JOIN "T0000_Contato" C
+	      ON P."IdPaciente"::varchar = C."IdRegistro"
+	      AND C."IdEntidadeNegocio" = '0199015'
+          where  ( C."CdDDD1" = left('11998697292',2) AND  REPLACE(C."NrTelefone1", '-', '') = right('11998697292',9))
+           OR    ( C."CdDDD2" = left('11998697292',2) AND  REPLACE(C."NrTelefone2", '-', '') = right('11998697292',9))       
+           OR    ( C."CdDDD3" = left('11998697292',2) AND  REPLACE(C."NrTelefone3", '-', '') = right('11998697292',9))
+                 ) x;}
+18:08:38 - Called /Futurofone/clientes?contato=11998697292: 
+{Recieved:
+ contato=11998697292 
+ Returning : 
+0}
+18:09:25 - Called /Futurofone/clientes?contato=11998697292: 
+{Parâmetros recebidos: contato=11998697292 }
+18:09:25 - Called /Futurofone/clientes?contato=11998697292: 
+{Query:
+ SELECT row_to_json(x) AS Pacientes
+	FROM (SELECT 
+	      "IdPaciente" as  Id,
+	      "NmPaciente" as  Nome,
+	      "DtNascimento" as  data_nascimento
+	      from "T0199_Paciente"  P INNER JOIN "T0000_Contato" C
+	      ON P."IdPaciente"::varchar = C."IdRegistro"
+	      AND C."IdEntidadeNegocio" = '0199015'
+          where  ( C."CdDDD1" = left('11998697292',2) AND  REPLACE(C."NrTelefone1", '-', '') = right('11998697292',9))
+           OR    ( C."CdDDD2" = left('11998697292',2) AND  REPLACE(C."NrTelefone2", '-', '') = right('11998697292',9))       
+           OR    ( C."CdDDD3" = left('11998697292',2) AND  REPLACE(C."NrTelefone3", '-', '') = right('11998697292',9))
+                 ) x;}
+18:09:25 - Called /Futurofone/clientes?contato=11998697292: 
+{Recieved:
+ contato=11998697292 
+ Returning : 
+"[{\"id\":22,\"nome\":\"Emilly Gabriela Nair Cavalcanti\",\"data_nascimento\":\"1995-06-14\"}]"}
+18:38:36 - Called /Futurofone/clientes?contato=11998697292: 
+{Parâmetros recebidos: contato=11998697292 }
+18:38:36 - Called /Futurofone/clientes?contato=11998697292: 
+{Query:
+ SELECT row_to_json(x) AS Pacientes
+	FROM (SELECT 
+	      "IdPaciente" as  Id,
+	      "NmPaciente" as  Nome,
+	      "DtNascimento" as  data_nascimento
+	      from "T0199_Paciente"  P INNER JOIN "T0000_Contato" C
+	      ON P."IdPaciente"::varchar = C."IdRegistro"
+	      AND C."IdEntidadeNegocio" = '0199015'
+          where  ( C."CdDDD1" = left('11998697292',2) AND  REPLACE(C."NrTelefone1", '-', '') = right('11998697292',9))
+           OR    ( C."CdDDD2" = left('11998697292',2) AND  REPLACE(C."NrTelefone2", '-', '') = right('11998697292',9))       
+           OR    ( C."CdDDD3" = left('11998697292',2) AND  REPLACE(C."NrTelefone3", '-', '') = right('11998697292',9))
+                 ) x;}
+18:38:37 - Called /Futurofone/clientes?contato=11998697292: 
+{Recieved:
+ contato=11998697292 
+ Returning : 
+"[{\"id\":22,\"nome\":\"Emilly Gabriela Nair Cavalcanti\",\"data_nascimento\":\"1995-06-14\"}]"}
+18:41:05 - Called /Futurofone/clientes?contato=11998697292: 
+{Parâmetros recebidos: contato=11998697292 }
+18:41:05 - Called /Futurofone/clientes?contato=11998697292: 
+{Query:
+ SELECT row_to_json(x) AS Pacientes
+	FROM (SELECT 
+	      "IdPaciente" as  Id,
+	      "NmPaciente" as  Nome,
+	      "DtNascimento" as  data_nascimento
+	      from "T0199_Paciente"  P INNER JOIN "T0000_Contato" C
+	      ON P."IdPaciente"::varchar = C."IdRegistro"
+	      AND C."IdEntidadeNegocio" = '0199015'
+          where  ( C."CdDDD1" = left('11998697292',2) AND  REPLACE(C."NrTelefone1", '-', '') = right('11998697292',9))
+           OR    ( C."CdDDD2" = left('11998697292',2) AND  REPLACE(C."NrTelefone2", '-', '') = right('11998697292',9))       
+           OR    ( C."CdDDD3" = left('11998697292',2) AND  REPLACE(C."NrTelefone3", '-', '') = right('11998697292',9))
+                 ) x;}
+18:41:05 - Called /Futurofone/clientes?contato=11998697292: 
+{Recieved:
+ contato=11998697292 
+ Returning : 
+"[{\"id\":22,\"nome\":\"Emilly Gabriela Nair Cavalcanti\",\"data_nascimento\":\"1995-06-14\"}]"}
+19:38:26 - Called /Futurofone/atendimentos?id_cliente=22: 
+{Parâmetros recebidos: id_cliente=22 }
+19:38:26 - Called /Futurofone/atendimentos?id_cliente=22: 
+{Query:
+     SELECT row_to_json(x) AS atendimentos
+	FROM (SELECT
+		AGD."IdAgendamento"		AS "Id",
+		CASE 
+			WHEN PTC."StResultadoDisponivel" = FALSE THEN 'INDISPONIVEL'
+			WHEN STR."IdRegistro" IS NOT NULL THEN 'ATENDIDO'
+			WHEN PTC."DtEntrega" IS NOT NULL THEN 'ENTREGUE'
+			WHEN PTC."StResultadoExpirado" = FALSE THEN 'DISPONÍVEL'
+			ELSE 'EXPIRADO' 
+		END :: CHARACTER VARYING		AS Status
+	, TO_CHAR(AGD."DtAgendamento", 'DD/MM/YYYY')::CHARACTER(10) 	AS  data_agendado
+	, TO_CHAR(AGD."DtAgendamento", 'HH24:MI')::CHARACTER(5) AS hora_agendado
+	, MDL."IdModalidade" AS id_modalidade
+	, MDL."NmModalidade" AS nome_modalidadade
+	, PRD."IdProcedimento" AS id_procedimento
+	, PRD."NmApelido" AS nome_procedimento
+	, (COALESCE(EDR."DsEndereco", '') || '|' || COALESCE(EDR."NrEndereco", '') || '|' || COALESCE(EDR."NmComplemento", '')) AS endereco
+	FROM		
+		"T0102_Agendamento"				AGD	
+	INNER JOIN
+		"T0199_Procedimento"					PRD
+	ON
+		PRD."IdProcedimento"					= AGD."IdProcedimento"
+	AND PRD."StExclusao"				= FALSE
+	INNER JOIN 
+		"T0199_Modalidade" MDL
+	ON 
+		PRD."IdModalidade" = MDL."IdModalidade"
+	INNER JOIN "T0000_Endereco" EDR
+	ON AGD."IdUnidade" = EDR."IdRegistro"
+	AND EDR."IdEntidadeNegocio" = '0199013'
+	LEFT JOIN
+		"T0102_Atendimento_Agendamento"	AAT
+	ON
+		AAT."IdAgendamento"				= AGD."IdAgendamento"
+	AND AAT."StExclusao"				= FALSE
+	LEFT  JOIN 
+		"T0102_Atendimento" 				ATD
+	ON 
+		ATD."IdAtendimento"					= AAT."IdAtendimento"
+	AND ATD."IdPaciente"					=  AGD."IdPaciente"
+	LEFT JOIN 
+		"T0102_Protocolo" PTC
+	ON 
+		ATD."IdAtendimento" = PTC."IdAtendimento"
+	LEFT JOIN
+		"T0000_AssociacaoRegistros"			ASR
+	ON
+		ASR."IdEntidadeNegocioA"			= '0102009'
+	AND	ASR."IdEntidadeNegocioB"			= '0102012'
+	AND ASR."IdRegistroB"					= PTC."IdProtocolo"::CHARACTER VARYING
+	AND ASR."StExclusao"					= FALSE
+	LEFT JOIN 
+		"T0000_StatusRegistro" 				STR
+	ON
+		STR."IdEntidadeNegocio" 			= '0102009'
+	AND STR."IdRegistro" 					= ASR."IdRegistroA"
+	AND STR."IdEtapa" 						= '0102001005'
+	AND STR."IdStatus" 						= '0102001005001'
+	WHERE 		
+		AGD."IdPaciente"				= 22
+	AND AGD."StExclusao"				= FALSE
+	AND AGD."StCancelado"				= FALSE
+	AND AAT."IdAtendimento"				IS NULL
+	ORDER BY 
+		AGD."DtAgendamento"}
+19:39:57 - Called /Futurofone/atendimentos?id_cliente=22: 
+{Parâmetros recebidos: id_cliente=22 }
+19:39:57 - Called /Futurofone/atendimentos?id_cliente=22: 
+{Query:
+     SELECT row_to_json(x) AS atendimentos
+	FROM (SELECT
+		AGD."IdAgendamento"		AS "Id",
+		CASE 
+			WHEN PTC."StResultadoDisponivel" = FALSE THEN 'INDISPONIVEL'
+			WHEN STR."IdRegistro" IS NOT NULL THEN 'ATENDIDO'
+			WHEN PTC."DtEntrega" IS NOT NULL THEN 'ENTREGUE'
+			WHEN PTC."StResultadoExpirado" = FALSE THEN 'DISPONÍVEL'
+			ELSE 'EXPIRADO' 
+		END :: CHARACTER VARYING		AS Status
+	, TO_CHAR(AGD."DtAgendamento", 'DD/MM/YYYY')::CHARACTER(10) 	AS  data_agendado
+	, TO_CHAR(AGD."DtAgendamento", 'HH24:MI')::CHARACTER(5) AS hora_agendado
+	, MDL."IdModalidade" AS id_modalidade
+	, MDL."NmModalidade" AS nome_modalidadade
+	, PRD."IdProcedimento" AS id_procedimento
+	, PRD."NmApelido" AS nome_procedimento
+	, (COALESCE(EDR."DsEndereco", '') || '|' || COALESCE(EDR."NrEndereco", '') || '|' || COALESCE(EDR."NmComplemento", '')) AS endereco
+	FROM		
+		"T0102_Agendamento"				AGD	
+	INNER JOIN
+		"T0199_Procedimento"					PRD
+	ON
+		PRD."IdProcedimento"					= AGD."IdProcedimento"
+	AND PRD."StExclusao"				= FALSE
+	INNER JOIN 
+		"T0199_Modalidade" MDL
+	ON 
+		PRD."IdModalidade" = MDL."IdModalidade"
+	INNER JOIN "T0000_Endereco" EDR
+	ON AGD."IdUnidade" = EDR."IdRegistro"
+	AND EDR."IdEntidadeNegocio" = '0199013'
+	LEFT JOIN
+		"T0102_Atendimento_Agendamento"	AAT
+	ON
+		AAT."IdAgendamento"				= AGD."IdAgendamento"
+	AND AAT."StExclusao"				= FALSE
+	LEFT  JOIN 
+		"T0102_Atendimento" 				ATD
+	ON 
+		ATD."IdAtendimento"					= AAT."IdAtendimento"
+	AND ATD."IdPaciente"					=  AGD."IdPaciente"
+	LEFT JOIN 
+		"T0102_Protocolo" PTC
+	ON 
+		ATD."IdAtendimento" = PTC."IdAtendimento"
+	LEFT JOIN
+		"T0000_AssociacaoRegistros"			ASR
+	ON
+		ASR."IdEntidadeNegocioA"			= '0102009'
+	AND	ASR."IdEntidadeNegocioB"			= '0102012'
+	AND ASR."IdRegistroB"					= PTC."IdProtocolo"::CHARACTER VARYING
+	AND ASR."StExclusao"					= FALSE
+	LEFT JOIN 
+		"T0000_StatusRegistro" 				STR
+	ON
+		STR."IdEntidadeNegocio" 			= '0102009'
+	AND STR."IdRegistro" 					= ASR."IdRegistroA"
+	AND STR."IdEtapa" 						= '0102001005'
+	AND STR."IdStatus" 						= '0102001005001'
+	WHERE 		
+		AGD."IdPaciente"				= 22
+	AND AGD."StExclusao"				= FALSE
+	AND AGD."StCancelado"				= FALSE
+	AND AAT."IdAtendimento"				IS NULL
+	ORDER BY 
+		AGD."DtAgendamento") x}
+19:39:57 - Called /Futurofone/atendimentos?id_cliente=22: 
+{Recieved:
+ contato=22 
+ Returning : 
+"[{\"Id\":124,\"status\":\"EXPIRADO\",\"data_agendado\":\"18\/08\/2020\",\"hora_agendado\":\"08:55\",\"id_modalidade\":\"000010000100001\",\"nome_modalidadade\":\"RESSON\u00c2NCIA\",\"id_procedimento\":\"000010000100005\",\"nome_procedimento\":\"RM - ABDOME TOTAL\",\"endereco\":\"RUA DO TESTE|0000|\"}]"}
+19:41:35 - Called /Futurofone/atendimentos?id_cliente=1: 
+{Parâmetros recebidos: id_cliente=1 }
+19:41:35 - Called /Futurofone/atendimentos?id_cliente=1: 
+{Query:
+     SELECT row_to_json(x) AS atendimentos
+	FROM (SELECT
+		AGD."IdAgendamento"		AS "Id",
+		CASE 
+			WHEN PTC."StResultadoDisponivel" = FALSE THEN 'INDISPONIVEL'
+			WHEN STR."IdRegistro" IS NOT NULL THEN 'ATENDIDO'
+			WHEN PTC."DtEntrega" IS NOT NULL THEN 'ENTREGUE'
+			WHEN PTC."StResultadoExpirado" = FALSE THEN 'DISPONÍVEL'
+			ELSE 'EXPIRADO' 
+		END :: CHARACTER VARYING		AS Status
+	, TO_CHAR(AGD."DtAgendamento", 'DD/MM/YYYY')::CHARACTER(10) 	AS  data_agendado
+	, TO_CHAR(AGD."DtAgendamento", 'HH24:MI')::CHARACTER(5) AS hora_agendado
+	, MDL."IdModalidade" AS id_modalidade
+	, MDL."NmModalidade" AS nome_modalidadade
+	, PRD."IdProcedimento" AS id_procedimento
+	, PRD."NmApelido" AS nome_procedimento
+	, (COALESCE(EDR."DsEndereco", '') || ' , ' || COALESCE(EDR."NrEndereco", '') || ' - ' || COALESCE(EDR."NmComplemento", '')) AS endereco
+	FROM		
+		"T0102_Agendamento"				AGD	
+	INNER JOIN
+		"T0199_Procedimento"					PRD
+	ON
+		PRD."IdProcedimento"					= AGD."IdProcedimento"
+	AND PRD."StExclusao"				= FALSE
+	INNER JOIN 
+		"T0199_Modalidade" MDL
+	ON 
+		PRD."IdModalidade" = MDL."IdModalidade"
+	INNER JOIN "T0000_Endereco" EDR
+	ON AGD."IdUnidade" = EDR."IdRegistro"
+	AND EDR."IdEntidadeNegocio" = '0199013'
+	LEFT JOIN
+		"T0102_Atendimento_Agendamento"	AAT
+	ON
+		AAT."IdAgendamento"				= AGD."IdAgendamento"
+	AND AAT."StExclusao"				= FALSE
+	LEFT  JOIN 
+		"T0102_Atendimento" 				ATD
+	ON 
+		ATD."IdAtendimento"					= AAT."IdAtendimento"
+	AND ATD."IdPaciente"					=  AGD."IdPaciente"
+	LEFT JOIN 
+		"T0102_Protocolo" PTC
+	ON 
+		ATD."IdAtendimento" = PTC."IdAtendimento"
+	LEFT JOIN
+		"T0000_AssociacaoRegistros"			ASR
+	ON
+		ASR."IdEntidadeNegocioA"			= '0102009'
+	AND	ASR."IdEntidadeNegocioB"			= '0102012'
+	AND ASR."IdRegistroB"					= PTC."IdProtocolo"::CHARACTER VARYING
+	AND ASR."StExclusao"					= FALSE
+	LEFT JOIN 
+		"T0000_StatusRegistro" 				STR
+	ON
+		STR."IdEntidadeNegocio" 			= '0102009'
+	AND STR."IdRegistro" 					= ASR."IdRegistroA"
+	AND STR."IdEtapa" 						= '0102001005'
+	AND STR."IdStatus" 						= '0102001005001'
+	WHERE 		
+		AGD."IdPaciente"				= 1
+	AND AGD."StExclusao"				= FALSE
+	AND AGD."StCancelado"				= FALSE
+	AND AAT."IdAtendimento"				IS NULL
+	ORDER BY 
+		AGD."DtAgendamento") x}
+19:41:44 - Called /Futurofone/atendimentos?id_cliente=2: 
+{Parâmetros recebidos: id_cliente=2 }
+19:41:44 - Called /Futurofone/atendimentos?id_cliente=2: 
+{Query:
+     SELECT row_to_json(x) AS atendimentos
+	FROM (SELECT
+		AGD."IdAgendamento"		AS "Id",
+		CASE 
+			WHEN PTC."StResultadoDisponivel" = FALSE THEN 'INDISPONIVEL'
+			WHEN STR."IdRegistro" IS NOT NULL THEN 'ATENDIDO'
+			WHEN PTC."DtEntrega" IS NOT NULL THEN 'ENTREGUE'
+			WHEN PTC."StResultadoExpirado" = FALSE THEN 'DISPONÍVEL'
+			ELSE 'EXPIRADO' 
+		END :: CHARACTER VARYING		AS Status
+	, TO_CHAR(AGD."DtAgendamento", 'DD/MM/YYYY')::CHARACTER(10) 	AS  data_agendado
+	, TO_CHAR(AGD."DtAgendamento", 'HH24:MI')::CHARACTER(5) AS hora_agendado
+	, MDL."IdModalidade" AS id_modalidade
+	, MDL."NmModalidade" AS nome_modalidadade
+	, PRD."IdProcedimento" AS id_procedimento
+	, PRD."NmApelido" AS nome_procedimento
+	, (COALESCE(EDR."DsEndereco", '') || ' , ' || COALESCE(EDR."NrEndereco", '') || ' - ' || COALESCE(EDR."NmComplemento", '')) AS endereco
+	FROM		
+		"T0102_Agendamento"				AGD	
+	INNER JOIN
+		"T0199_Procedimento"					PRD
+	ON
+		PRD."IdProcedimento"					= AGD."IdProcedimento"
+	AND PRD."StExclusao"				= FALSE
+	INNER JOIN 
+		"T0199_Modalidade" MDL
+	ON 
+		PRD."IdModalidade" = MDL."IdModalidade"
+	INNER JOIN "T0000_Endereco" EDR
+	ON AGD."IdUnidade" = EDR."IdRegistro"
+	AND EDR."IdEntidadeNegocio" = '0199013'
+	LEFT JOIN
+		"T0102_Atendimento_Agendamento"	AAT
+	ON
+		AAT."IdAgendamento"				= AGD."IdAgendamento"
+	AND AAT."StExclusao"				= FALSE
+	LEFT  JOIN 
+		"T0102_Atendimento" 				ATD
+	ON 
+		ATD."IdAtendimento"					= AAT."IdAtendimento"
+	AND ATD."IdPaciente"					=  AGD."IdPaciente"
+	LEFT JOIN 
+		"T0102_Protocolo" PTC
+	ON 
+		ATD."IdAtendimento" = PTC."IdAtendimento"
+	LEFT JOIN
+		"T0000_AssociacaoRegistros"			ASR
+	ON
+		ASR."IdEntidadeNegocioA"			= '0102009'
+	AND	ASR."IdEntidadeNegocioB"			= '0102012'
+	AND ASR."IdRegistroB"					= PTC."IdProtocolo"::CHARACTER VARYING
+	AND ASR."StExclusao"					= FALSE
+	LEFT JOIN 
+		"T0000_StatusRegistro" 				STR
+	ON
+		STR."IdEntidadeNegocio" 			= '0102009'
+	AND STR."IdRegistro" 					= ASR."IdRegistroA"
+	AND STR."IdEtapa" 						= '0102001005'
+	AND STR."IdStatus" 						= '0102001005001'
+	WHERE 		
+		AGD."IdPaciente"				= 2
+	AND AGD."StExclusao"				= FALSE
+	AND AGD."StCancelado"				= FALSE
+	AND AAT."IdAtendimento"				IS NULL
+	ORDER BY 
+		AGD."DtAgendamento") x}
+19:41:49 - Called /Futurofone/atendimentos?id_cliente=3: 
+{Parâmetros recebidos: id_cliente=3 }
+19:41:49 - Called /Futurofone/atendimentos?id_cliente=3: 
+{Query:
+     SELECT row_to_json(x) AS atendimentos
+	FROM (SELECT
+		AGD."IdAgendamento"		AS "Id",
+		CASE 
+			WHEN PTC."StResultadoDisponivel" = FALSE THEN 'INDISPONIVEL'
+			WHEN STR."IdRegistro" IS NOT NULL THEN 'ATENDIDO'
+			WHEN PTC."DtEntrega" IS NOT NULL THEN 'ENTREGUE'
+			WHEN PTC."StResultadoExpirado" = FALSE THEN 'DISPONÍVEL'
+			ELSE 'EXPIRADO' 
+		END :: CHARACTER VARYING		AS Status
+	, TO_CHAR(AGD."DtAgendamento", 'DD/MM/YYYY')::CHARACTER(10) 	AS  data_agendado
+	, TO_CHAR(AGD."DtAgendamento", 'HH24:MI')::CHARACTER(5) AS hora_agendado
+	, MDL."IdModalidade" AS id_modalidade
+	, MDL."NmModalidade" AS nome_modalidadade
+	, PRD."IdProcedimento" AS id_procedimento
+	, PRD."NmApelido" AS nome_procedimento
+	, (COALESCE(EDR."DsEndereco", '') || ' , ' || COALESCE(EDR."NrEndereco", '') || ' - ' || COALESCE(EDR."NmComplemento", '')) AS endereco
+	FROM		
+		"T0102_Agendamento"				AGD	
+	INNER JOIN
+		"T0199_Procedimento"					PRD
+	ON
+		PRD."IdProcedimento"					= AGD."IdProcedimento"
+	AND PRD."StExclusao"				= FALSE
+	INNER JOIN 
+		"T0199_Modalidade" MDL
+	ON 
+		PRD."IdModalidade" = MDL."IdModalidade"
+	INNER JOIN "T0000_Endereco" EDR
+	ON AGD."IdUnidade" = EDR."IdRegistro"
+	AND EDR."IdEntidadeNegocio" = '0199013'
+	LEFT JOIN
+		"T0102_Atendimento_Agendamento"	AAT
+	ON
+		AAT."IdAgendamento"				= AGD."IdAgendamento"
+	AND AAT."StExclusao"				= FALSE
+	LEFT  JOIN 
+		"T0102_Atendimento" 				ATD
+	ON 
+		ATD."IdAtendimento"					= AAT."IdAtendimento"
+	AND ATD."IdPaciente"					=  AGD."IdPaciente"
+	LEFT JOIN 
+		"T0102_Protocolo" PTC
+	ON 
+		ATD."IdAtendimento" = PTC."IdAtendimento"
+	LEFT JOIN
+		"T0000_AssociacaoRegistros"			ASR
+	ON
+		ASR."IdEntidadeNegocioA"			= '0102009'
+	AND	ASR."IdEntidadeNegocioB"			= '0102012'
+	AND ASR."IdRegistroB"					= PTC."IdProtocolo"::CHARACTER VARYING
+	AND ASR."StExclusao"					= FALSE
+	LEFT JOIN 
+		"T0000_StatusRegistro" 				STR
+	ON
+		STR."IdEntidadeNegocio" 			= '0102009'
+	AND STR."IdRegistro" 					= ASR."IdRegistroA"
+	AND STR."IdEtapa" 						= '0102001005'
+	AND STR."IdStatus" 						= '0102001005001'
+	WHERE 		
+		AGD."IdPaciente"				= 3
+	AND AGD."StExclusao"				= FALSE
+	AND AGD."StCancelado"				= FALSE
+	AND AAT."IdAtendimento"				IS NULL
+	ORDER BY 
+		AGD."DtAgendamento") x}
+19:41:56 - Called /Futurofone/atendimentos?id_cliente=4: 
+{Parâmetros recebidos: id_cliente=4 }
+19:41:56 - Called /Futurofone/atendimentos?id_cliente=4: 
+{Query:
+     SELECT row_to_json(x) AS atendimentos
+	FROM (SELECT
+		AGD."IdAgendamento"		AS "Id",
+		CASE 
+			WHEN PTC."StResultadoDisponivel" = FALSE THEN 'INDISPONIVEL'
+			WHEN STR."IdRegistro" IS NOT NULL THEN 'ATENDIDO'
+			WHEN PTC."DtEntrega" IS NOT NULL THEN 'ENTREGUE'
+			WHEN PTC."StResultadoExpirado" = FALSE THEN 'DISPONÍVEL'
+			ELSE 'EXPIRADO' 
+		END :: CHARACTER VARYING		AS Status
+	, TO_CHAR(AGD."DtAgendamento", 'DD/MM/YYYY')::CHARACTER(10) 	AS  data_agendado
+	, TO_CHAR(AGD."DtAgendamento", 'HH24:MI')::CHARACTER(5) AS hora_agendado
+	, MDL."IdModalidade" AS id_modalidade
+	, MDL."NmModalidade" AS nome_modalidadade
+	, PRD."IdProcedimento" AS id_procedimento
+	, PRD."NmApelido" AS nome_procedimento
+	, (COALESCE(EDR."DsEndereco", '') || ' , ' || COALESCE(EDR."NrEndereco", '') || ' - ' || COALESCE(EDR."NmComplemento", '')) AS endereco
+	FROM		
+		"T0102_Agendamento"				AGD	
+	INNER JOIN
+		"T0199_Procedimento"					PRD
+	ON
+		PRD."IdProcedimento"					= AGD."IdProcedimento"
+	AND PRD."StExclusao"				= FALSE
+	INNER JOIN 
+		"T0199_Modalidade" MDL
+	ON 
+		PRD."IdModalidade" = MDL."IdModalidade"
+	INNER JOIN "T0000_Endereco" EDR
+	ON AGD."IdUnidade" = EDR."IdRegistro"
+	AND EDR."IdEntidadeNegocio" = '0199013'
+	LEFT JOIN
+		"T0102_Atendimento_Agendamento"	AAT
+	ON
+		AAT."IdAgendamento"				= AGD."IdAgendamento"
+	AND AAT."StExclusao"				= FALSE
+	LEFT  JOIN 
+		"T0102_Atendimento" 				ATD
+	ON 
+		ATD."IdAtendimento"					= AAT."IdAtendimento"
+	AND ATD."IdPaciente"					=  AGD."IdPaciente"
+	LEFT JOIN 
+		"T0102_Protocolo" PTC
+	ON 
+		ATD."IdAtendimento" = PTC."IdAtendimento"
+	LEFT JOIN
+		"T0000_AssociacaoRegistros"			ASR
+	ON
+		ASR."IdEntidadeNegocioA"			= '0102009'
+	AND	ASR."IdEntidadeNegocioB"			= '0102012'
+	AND ASR."IdRegistroB"					= PTC."IdProtocolo"::CHARACTER VARYING
+	AND ASR."StExclusao"					= FALSE
+	LEFT JOIN 
+		"T0000_StatusRegistro" 				STR
+	ON
+		STR."IdEntidadeNegocio" 			= '0102009'
+	AND STR."IdRegistro" 					= ASR."IdRegistroA"
+	AND STR."IdEtapa" 						= '0102001005'
+	AND STR."IdStatus" 						= '0102001005001'
+	WHERE 		
+		AGD."IdPaciente"				= 4
+	AND AGD."StExclusao"				= FALSE
+	AND AGD."StCancelado"				= FALSE
+	AND AAT."IdAtendimento"				IS NULL
+	ORDER BY 
+		AGD."DtAgendamento") x}
+19:42:31 - Called /Futurofone/atendimentos?id_cliente=24: 
+{Parâmetros recebidos: id_cliente=24 }
+19:42:31 - Called /Futurofone/atendimentos?id_cliente=24: 
+{Query:
+     SELECT row_to_json(x) AS atendimentos
+	FROM (SELECT
+		AGD."IdAgendamento"		AS "Id",
+		CASE 
+			WHEN PTC."StResultadoDisponivel" = FALSE THEN 'INDISPONIVEL'
+			WHEN STR."IdRegistro" IS NOT NULL THEN 'ATENDIDO'
+			WHEN PTC."DtEntrega" IS NOT NULL THEN 'ENTREGUE'
+			WHEN PTC."StResultadoExpirado" = FALSE THEN 'DISPONÍVEL'
+			ELSE 'EXPIRADO' 
+		END :: CHARACTER VARYING		AS Status
+	, TO_CHAR(AGD."DtAgendamento", 'DD/MM/YYYY')::CHARACTER(10) 	AS  data_agendado
+	, TO_CHAR(AGD."DtAgendamento", 'HH24:MI')::CHARACTER(5) AS hora_agendado
+	, MDL."IdModalidade" AS id_modalidade
+	, MDL."NmModalidade" AS nome_modalidadade
+	, PRD."IdProcedimento" AS id_procedimento
+	, PRD."NmApelido" AS nome_procedimento
+	, (COALESCE(EDR."DsEndereco", '') || ' , ' || COALESCE(EDR."NrEndereco", '') || ' - ' || COALESCE(EDR."NmComplemento", '')) AS endereco
+	FROM		
+		"T0102_Agendamento"				AGD	
+	INNER JOIN
+		"T0199_Procedimento"					PRD
+	ON
+		PRD."IdProcedimento"					= AGD."IdProcedimento"
+	AND PRD."StExclusao"				= FALSE
+	INNER JOIN 
+		"T0199_Modalidade" MDL
+	ON 
+		PRD."IdModalidade" = MDL."IdModalidade"
+	INNER JOIN "T0000_Endereco" EDR
+	ON AGD."IdUnidade" = EDR."IdRegistro"
+	AND EDR."IdEntidadeNegocio" = '0199013'
+	LEFT JOIN
+		"T0102_Atendimento_Agendamento"	AAT
+	ON
+		AAT."IdAgendamento"				= AGD."IdAgendamento"
+	AND AAT."StExclusao"				= FALSE
+	LEFT  JOIN 
+		"T0102_Atendimento" 				ATD
+	ON 
+		ATD."IdAtendimento"					= AAT."IdAtendimento"
+	AND ATD."IdPaciente"					=  AGD."IdPaciente"
+	LEFT JOIN 
+		"T0102_Protocolo" PTC
+	ON 
+		ATD."IdAtendimento" = PTC."IdAtendimento"
+	LEFT JOIN
+		"T0000_AssociacaoRegistros"			ASR
+	ON
+		ASR."IdEntidadeNegocioA"			= '0102009'
+	AND	ASR."IdEntidadeNegocioB"			= '0102012'
+	AND ASR."IdRegistroB"					= PTC."IdProtocolo"::CHARACTER VARYING
+	AND ASR."StExclusao"					= FALSE
+	LEFT JOIN 
+		"T0000_StatusRegistro" 				STR
+	ON
+		STR."IdEntidadeNegocio" 			= '0102009'
+	AND STR."IdRegistro" 					= ASR."IdRegistroA"
+	AND STR."IdEtapa" 						= '0102001005'
+	AND STR."IdStatus" 						= '0102001005001'
+	WHERE 		
+		AGD."IdPaciente"				= 24
+	AND AGD."StExclusao"				= FALSE
+	AND AGD."StCancelado"				= FALSE
+	AND AAT."IdAtendimento"				IS NULL
+	ORDER BY 
+		AGD."DtAgendamento") x}
+19:42:32 - Called /Futurofone/atendimentos?id_cliente=24: 
+{Recieved:
+ contato=24 
+ Returning : 
+"[{\"Id\":109,\"status\":\"EXPIRADO\",\"data_agendado\":\"06\/08\/2020\",\"hora_agendado\":\"08:30\",\"id_modalidade\":\"000010000100001\",\"nome_modalidadade\":\"RESSON\u00c2NCIA\",\"id_procedimento\":\"000010000100002\",\"nome_procedimento\":\"RM - MAMA\",\"endereco\":\"RUA DO TESTE , 0000 - \"}]"}
+19:42:41 - Called /Futurofone/atendimentos?id_cliente=25: 
+{Parâmetros recebidos: id_cliente=25 }
+19:42:41 - Called /Futurofone/atendimentos?id_cliente=25: 
+{Query:
+     SELECT row_to_json(x) AS atendimentos
+	FROM (SELECT
+		AGD."IdAgendamento"		AS "Id",
+		CASE 
+			WHEN PTC."StResultadoDisponivel" = FALSE THEN 'INDISPONIVEL'
+			WHEN STR."IdRegistro" IS NOT NULL THEN 'ATENDIDO'
+			WHEN PTC."DtEntrega" IS NOT NULL THEN 'ENTREGUE'
+			WHEN PTC."StResultadoExpirado" = FALSE THEN 'DISPONÍVEL'
+			ELSE 'EXPIRADO' 
+		END :: CHARACTER VARYING		AS Status
+	, TO_CHAR(AGD."DtAgendamento", 'DD/MM/YYYY')::CHARACTER(10) 	AS  data_agendado
+	, TO_CHAR(AGD."DtAgendamento", 'HH24:MI')::CHARACTER(5) AS hora_agendado
+	, MDL."IdModalidade" AS id_modalidade
+	, MDL."NmModalidade" AS nome_modalidadade
+	, PRD."IdProcedimento" AS id_procedimento
+	, PRD."NmApelido" AS nome_procedimento
+	, (COALESCE(EDR."DsEndereco", '') || ' , ' || COALESCE(EDR."NrEndereco", '') || ' - ' || COALESCE(EDR."NmComplemento", '')) AS endereco
+	FROM		
+		"T0102_Agendamento"				AGD	
+	INNER JOIN
+		"T0199_Procedimento"					PRD
+	ON
+		PRD."IdProcedimento"					= AGD."IdProcedimento"
+	AND PRD."StExclusao"				= FALSE
+	INNER JOIN 
+		"T0199_Modalidade" MDL
+	ON 
+		PRD."IdModalidade" = MDL."IdModalidade"
+	INNER JOIN "T0000_Endereco" EDR
+	ON AGD."IdUnidade" = EDR."IdRegistro"
+	AND EDR."IdEntidadeNegocio" = '0199013'
+	LEFT JOIN
+		"T0102_Atendimento_Agendamento"	AAT
+	ON
+		AAT."IdAgendamento"				= AGD."IdAgendamento"
+	AND AAT."StExclusao"				= FALSE
+	LEFT  JOIN 
+		"T0102_Atendimento" 				ATD
+	ON 
+		ATD."IdAtendimento"					= AAT."IdAtendimento"
+	AND ATD."IdPaciente"					=  AGD."IdPaciente"
+	LEFT JOIN 
+		"T0102_Protocolo" PTC
+	ON 
+		ATD."IdAtendimento" = PTC."IdAtendimento"
+	LEFT JOIN
+		"T0000_AssociacaoRegistros"			ASR
+	ON
+		ASR."IdEntidadeNegocioA"			= '0102009'
+	AND	ASR."IdEntidadeNegocioB"			= '0102012'
+	AND ASR."IdRegistroB"					= PTC."IdProtocolo"::CHARACTER VARYING
+	AND ASR."StExclusao"					= FALSE
+	LEFT JOIN 
+		"T0000_StatusRegistro" 				STR
+	ON
+		STR."IdEntidadeNegocio" 			= '0102009'
+	AND STR."IdRegistro" 					= ASR."IdRegistroA"
+	AND STR."IdEtapa" 						= '0102001005'
+	AND STR."IdStatus" 						= '0102001005001'
+	WHERE 		
+		AGD."IdPaciente"				= 25
+	AND AGD."StExclusao"				= FALSE
+	AND AGD."StCancelado"				= FALSE
+	AND AAT."IdAtendimento"				IS NULL
+	ORDER BY 
+		AGD."DtAgendamento") x}
+19:42:41 - Called /Futurofone/atendimentos?id_cliente=25: 
+{Recieved:
+ contato=25 
+ Returning : 
+"[{\"Id\":114,\"status\":\"EXPIRADO\",\"data_agendado\":\"12\/08\/2020\",\"hora_agendado\":\"16:45\",\"id_modalidade\":\"000010000100001\",\"nome_modalidadade\":\"RESSON\u00c2NCIA\",\"id_procedimento\":\"000010000100005\",\"nome_procedimento\":\"RM - ABDOME TOTAL\",\"endereco\":\"RUA DO TESTE , 0000 - \"}]"}
+19:42:49 - Called /Futurofone/atendimentos?id_cliente=26: 
+{Parâmetros recebidos: id_cliente=26 }
+19:42:49 - Called /Futurofone/atendimentos?id_cliente=26: 
+{Query:
+     SELECT row_to_json(x) AS atendimentos
+	FROM (SELECT
+		AGD."IdAgendamento"		AS "Id",
+		CASE 
+			WHEN PTC."StResultadoDisponivel" = FALSE THEN 'INDISPONIVEL'
+			WHEN STR."IdRegistro" IS NOT NULL THEN 'ATENDIDO'
+			WHEN PTC."DtEntrega" IS NOT NULL THEN 'ENTREGUE'
+			WHEN PTC."StResultadoExpirado" = FALSE THEN 'DISPONÍVEL'
+			ELSE 'EXPIRADO' 
+		END :: CHARACTER VARYING		AS Status
+	, TO_CHAR(AGD."DtAgendamento", 'DD/MM/YYYY')::CHARACTER(10) 	AS  data_agendado
+	, TO_CHAR(AGD."DtAgendamento", 'HH24:MI')::CHARACTER(5) AS hora_agendado
+	, MDL."IdModalidade" AS id_modalidade
+	, MDL."NmModalidade" AS nome_modalidadade
+	, PRD."IdProcedimento" AS id_procedimento
+	, PRD."NmApelido" AS nome_procedimento
+	, (COALESCE(EDR."DsEndereco", '') || ' , ' || COALESCE(EDR."NrEndereco", '') || ' - ' || COALESCE(EDR."NmComplemento", '')) AS endereco
+	FROM		
+		"T0102_Agendamento"				AGD	
+	INNER JOIN
+		"T0199_Procedimento"					PRD
+	ON
+		PRD."IdProcedimento"					= AGD."IdProcedimento"
+	AND PRD."StExclusao"				= FALSE
+	INNER JOIN 
+		"T0199_Modalidade" MDL
+	ON 
+		PRD."IdModalidade" = MDL."IdModalidade"
+	INNER JOIN "T0000_Endereco" EDR
+	ON AGD."IdUnidade" = EDR."IdRegistro"
+	AND EDR."IdEntidadeNegocio" = '0199013'
+	LEFT JOIN
+		"T0102_Atendimento_Agendamento"	AAT
+	ON
+		AAT."IdAgendamento"				= AGD."IdAgendamento"
+	AND AAT."StExclusao"				= FALSE
+	LEFT  JOIN 
+		"T0102_Atendimento" 				ATD
+	ON 
+		ATD."IdAtendimento"					= AAT."IdAtendimento"
+	AND ATD."IdPaciente"					=  AGD."IdPaciente"
+	LEFT JOIN 
+		"T0102_Protocolo" PTC
+	ON 
+		ATD."IdAtendimento" = PTC."IdAtendimento"
+	LEFT JOIN
+		"T0000_AssociacaoRegistros"			ASR
+	ON
+		ASR."IdEntidadeNegocioA"			= '0102009'
+	AND	ASR."IdEntidadeNegocioB"			= '0102012'
+	AND ASR."IdRegistroB"					= PTC."IdProtocolo"::CHARACTER VARYING
+	AND ASR."StExclusao"					= FALSE
+	LEFT JOIN 
+		"T0000_StatusRegistro" 				STR
+	ON
+		STR."IdEntidadeNegocio" 			= '0102009'
+	AND STR."IdRegistro" 					= ASR."IdRegistroA"
+	AND STR."IdEtapa" 						= '0102001005'
+	AND STR."IdStatus" 						= '0102001005001'
+	WHERE 		
+		AGD."IdPaciente"				= 26
+	AND AGD."StExclusao"				= FALSE
+	AND AGD."StCancelado"				= FALSE
+	AND AAT."IdAtendimento"				IS NULL
+	ORDER BY 
+		AGD."DtAgendamento") x}
+19:42:54 - Called /Futurofone/atendimentos?id_cliente=22: 
+{Parâmetros recebidos: id_cliente=22 }
+19:42:54 - Called /Futurofone/atendimentos?id_cliente=22: 
+{Query:
+     SELECT row_to_json(x) AS atendimentos
+	FROM (SELECT
+		AGD."IdAgendamento"		AS "Id",
+		CASE 
+			WHEN PTC."StResultadoDisponivel" = FALSE THEN 'INDISPONIVEL'
+			WHEN STR."IdRegistro" IS NOT NULL THEN 'ATENDIDO'
+			WHEN PTC."DtEntrega" IS NOT NULL THEN 'ENTREGUE'
+			WHEN PTC."StResultadoExpirado" = FALSE THEN 'DISPONÍVEL'
+			ELSE 'EXPIRADO' 
+		END :: CHARACTER VARYING		AS Status
+	, TO_CHAR(AGD."DtAgendamento", 'DD/MM/YYYY')::CHARACTER(10) 	AS  data_agendado
+	, TO_CHAR(AGD."DtAgendamento", 'HH24:MI')::CHARACTER(5) AS hora_agendado
+	, MDL."IdModalidade" AS id_modalidade
+	, MDL."NmModalidade" AS nome_modalidadade
+	, PRD."IdProcedimento" AS id_procedimento
+	, PRD."NmApelido" AS nome_procedimento
+	, (COALESCE(EDR."DsEndereco", '') || ' , ' || COALESCE(EDR."NrEndereco", '') || ' - ' || COALESCE(EDR."NmComplemento", '')) AS endereco
+	FROM		
+		"T0102_Agendamento"				AGD	
+	INNER JOIN
+		"T0199_Procedimento"					PRD
+	ON
+		PRD."IdProcedimento"					= AGD."IdProcedimento"
+	AND PRD."StExclusao"				= FALSE
+	INNER JOIN 
+		"T0199_Modalidade" MDL
+	ON 
+		PRD."IdModalidade" = MDL."IdModalidade"
+	INNER JOIN "T0000_Endereco" EDR
+	ON AGD."IdUnidade" = EDR."IdRegistro"
+	AND EDR."IdEntidadeNegocio" = '0199013'
+	LEFT JOIN
+		"T0102_Atendimento_Agendamento"	AAT
+	ON
+		AAT."IdAgendamento"				= AGD."IdAgendamento"
+	AND AAT."StExclusao"				= FALSE
+	LEFT  JOIN 
+		"T0102_Atendimento" 				ATD
+	ON 
+		ATD."IdAtendimento"					= AAT."IdAtendimento"
+	AND ATD."IdPaciente"					=  AGD."IdPaciente"
+	LEFT JOIN 
+		"T0102_Protocolo" PTC
+	ON 
+		ATD."IdAtendimento" = PTC."IdAtendimento"
+	LEFT JOIN
+		"T0000_AssociacaoRegistros"			ASR
+	ON
+		ASR."IdEntidadeNegocioA"			= '0102009'
+	AND	ASR."IdEntidadeNegocioB"			= '0102012'
+	AND ASR."IdRegistroB"					= PTC."IdProtocolo"::CHARACTER VARYING
+	AND ASR."StExclusao"					= FALSE
+	LEFT JOIN 
+		"T0000_StatusRegistro" 				STR
+	ON
+		STR."IdEntidadeNegocio" 			= '0102009'
+	AND STR."IdRegistro" 					= ASR."IdRegistroA"
+	AND STR."IdEtapa" 						= '0102001005'
+	AND STR."IdStatus" 						= '0102001005001'
+	WHERE 		
+		AGD."IdPaciente"				= 22
+	AND AGD."StExclusao"				= FALSE
+	AND AGD."StCancelado"				= FALSE
+	AND AAT."IdAtendimento"				IS NULL
+	ORDER BY 
+		AGD."DtAgendamento") x}
+19:42:54 - Called /Futurofone/atendimentos?id_cliente=22: 
+{Recieved:
+ contato=22 
+ Returning : 
+"[{\"Id\":124,\"status\":\"EXPIRADO\",\"data_agendado\":\"18\/08\/2020\",\"hora_agendado\":\"08:55\",\"id_modalidade\":\"000010000100001\",\"nome_modalidadade\":\"RESSON\u00c2NCIA\",\"id_procedimento\":\"000010000100005\",\"nome_procedimento\":\"RM - ABDOME TOTAL\",\"endereco\":\"RUA DO TESTE , 0000 - \"}]"}
+19:43:04 - Called /Futurofone/atendimentos?id_cliente=24: 
+{Parâmetros recebidos: id_cliente=24 }
+19:43:04 - Called /Futurofone/atendimentos?id_cliente=24: 
+{Query:
+     SELECT row_to_json(x) AS atendimentos
+	FROM (SELECT
+		AGD."IdAgendamento"		AS "Id",
+		CASE 
+			WHEN PTC."StResultadoDisponivel" = FALSE THEN 'INDISPONIVEL'
+			WHEN STR."IdRegistro" IS NOT NULL THEN 'ATENDIDO'
+			WHEN PTC."DtEntrega" IS NOT NULL THEN 'ENTREGUE'
+			WHEN PTC."StResultadoExpirado" = FALSE THEN 'DISPONÍVEL'
+			ELSE 'EXPIRADO' 
+		END :: CHARACTER VARYING		AS Status
+	, TO_CHAR(AGD."DtAgendamento", 'DD/MM/YYYY')::CHARACTER(10) 	AS  data_agendado
+	, TO_CHAR(AGD."DtAgendamento", 'HH24:MI')::CHARACTER(5) AS hora_agendado
+	, MDL."IdModalidade" AS id_modalidade
+	, MDL."NmModalidade" AS nome_modalidadade
+	, PRD."IdProcedimento" AS id_procedimento
+	, PRD."NmApelido" AS nome_procedimento
+	, (COALESCE(EDR."DsEndereco", '') || ' , ' || COALESCE(EDR."NrEndereco", '') || ' - ' || COALESCE(EDR."NmComplemento", '')) AS endereco
+	FROM		
+		"T0102_Agendamento"				AGD	
+	INNER JOIN
+		"T0199_Procedimento"					PRD
+	ON
+		PRD."IdProcedimento"					= AGD."IdProcedimento"
+	AND PRD."StExclusao"				= FALSE
+	INNER JOIN 
+		"T0199_Modalidade" MDL
+	ON 
+		PRD."IdModalidade" = MDL."IdModalidade"
+	INNER JOIN "T0000_Endereco" EDR
+	ON AGD."IdUnidade" = EDR."IdRegistro"
+	AND EDR."IdEntidadeNegocio" = '0199013'
+	LEFT JOIN
+		"T0102_Atendimento_Agendamento"	AAT
+	ON
+		AAT."IdAgendamento"				= AGD."IdAgendamento"
+	AND AAT."StExclusao"				= FALSE
+	LEFT  JOIN 
+		"T0102_Atendimento" 				ATD
+	ON 
+		ATD."IdAtendimento"					= AAT."IdAtendimento"
+	AND ATD."IdPaciente"					=  AGD."IdPaciente"
+	LEFT JOIN 
+		"T0102_Protocolo" PTC
+	ON 
+		ATD."IdAtendimento" = PTC."IdAtendimento"
+	LEFT JOIN
+		"T0000_AssociacaoRegistros"			ASR
+	ON
+		ASR."IdEntidadeNegocioA"			= '0102009'
+	AND	ASR."IdEntidadeNegocioB"			= '0102012'
+	AND ASR."IdRegistroB"					= PTC."IdProtocolo"::CHARACTER VARYING
+	AND ASR."StExclusao"					= FALSE
+	LEFT JOIN 
+		"T0000_StatusRegistro" 				STR
+	ON
+		STR."IdEntidadeNegocio" 			= '0102009'
+	AND STR."IdRegistro" 					= ASR."IdRegistroA"
+	AND STR."IdEtapa" 						= '0102001005'
+	AND STR."IdStatus" 						= '0102001005001'
+	WHERE 		
+		AGD."IdPaciente"				= 24
+	AND AGD."StExclusao"				= FALSE
+	AND AGD."StCancelado"				= FALSE
+	AND AAT."IdAtendimento"				IS NULL
+	ORDER BY 
+		AGD."DtAgendamento") x}
+19:43:04 - Called /Futurofone/atendimentos?id_cliente=24: 
+{Recieved:
+ contato=24 
+ Returning : 
+"[{\"Id\":109,\"status\":\"EXPIRADO\",\"data_agendado\":\"06\/08\/2020\",\"hora_agendado\":\"08:30\",\"id_modalidade\":\"000010000100001\",\"nome_modalidadade\":\"RESSON\u00c2NCIA\",\"id_procedimento\":\"000010000100002\",\"nome_procedimento\":\"RM - MAMA\",\"endereco\":\"RUA DO TESTE , 0000 - \"}]"}
+20:16:29 - Called /Futurofone/procedimentos?id_procedimento=000010000100002: 
+{Parâmetros recebidos: id_procedimento=000010000100002 }
+20:16:29 - Called /Futurofone/procedimentos?id_procedimento=000010000100002: 
+{Query:
+ SELECT row_to_json(x) AS procedimentos
+	FROM (SELECT PRD."IdProcedimento" AS Id,
+       PRD."NmApelido" AS Nome,
+       CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG INNER JOIN "T0199_Procedimento" PRD ON CFG."IdRegistro" = PRD."IdProcedimento"
+AND PRD."IdProcedimento" = '000010000100002'
+AND cfg."IdEntidadeNegocio" = '0199019') x}
+20:16:29 - Called /Futurofone/procedimentos?id_procedimento=000010000100002: 
+{Recieved:
+ contato=000010000100002 
+ Returning : 
+"[{\"id\":\"000010000100002\",\"nome\":\"RM - MAMA\",\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 PREPARO\\\\par\\r\\n}\\r\\n\"}]"}
+20:53:36 - Called /Futurofone/laudos?id_atendimento=114: 
+{Parâmetros recebidos: id_atendimento=114 }
+20:53:36 - Called /Futurofone/laudos?id_atendimento=114: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = __agendamento
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+20:54:07 - Called /Futurofone/laudos?id_atendimento=114: 
+{Parâmetros recebidos: id_atendimento=114 }
+20:54:07 - Called /Futurofone/laudos?id_atendimento=114: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 114
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+20:54:19 - Called /Futurofone/clientes?contato=11998697292: 
+{Parâmetros recebidos: contato=11998697292 }
+20:54:19 - Called /Futurofone/clientes?contato=11998697292: 
+{Query:
+ SELECT row_to_json(x) AS Pacientes
+	FROM (SELECT 
+	      "IdPaciente" as  Id,
+	      "NmPaciente" as  Nome,
+	      "DtNascimento" as  data_nascimento
+	      from "T0199_Paciente"  P INNER JOIN "T0000_Contato" C
+	      ON P."IdPaciente"::varchar = C."IdRegistro"
+	      AND C."IdEntidadeNegocio" = '0199015'
+          where  ( C."CdDDD1" = left('11998697292',2) AND  REPLACE(C."NrTelefone1", '-', '') = right('11998697292',9))
+           OR    ( C."CdDDD2" = left('11998697292',2) AND  REPLACE(C."NrTelefone2", '-', '') = right('11998697292',9))       
+           OR    ( C."CdDDD3" = left('11998697292',2) AND  REPLACE(C."NrTelefone3", '-', '') = right('11998697292',9))
+                 ) x;}
+20:54:19 - Called /Futurofone/clientes?contato=11998697292: 
+{Recieved:
+ contato=11998697292 
+ Returning : 
+"[{\"id\":22,\"nome\":\"Emilly Gabriela Nair Cavalcanti\",\"data_nascimento\":\"1995-06-14\"}]"}
+20:54:44 - Called /Futurofone/atendimentos?id_cliente=22: 
+{Parâmetros recebidos: id_cliente=22 }
+20:54:44 - Called /Futurofone/atendimentos?id_cliente=22: 
+{Query:
+     SELECT row_to_json(x) AS atendimentos
+	FROM (SELECT
+		AGD."IdAgendamento"		AS "Id",
+		CASE 
+			WHEN PTC."StResultadoDisponivel" = FALSE THEN 'INDISPONIVEL'
+			WHEN STR."IdRegistro" IS NOT NULL THEN 'ATENDIDO'
+			WHEN PTC."DtEntrega" IS NOT NULL THEN 'ENTREGUE'
+			WHEN PTC."StResultadoExpirado" = FALSE THEN 'DISPONÍVEL'
+			ELSE 'EXPIRADO' 
+		END :: CHARACTER VARYING		AS Status
+	, TO_CHAR(AGD."DtAgendamento", 'DD/MM/YYYY')::CHARACTER(10) 	AS  data_agendado
+	, TO_CHAR(AGD."DtAgendamento", 'HH24:MI')::CHARACTER(5) AS hora_agendado
+	, MDL."IdModalidade" AS id_modalidade
+	, MDL."NmModalidade" AS nome_modalidadade
+	, PRD."IdProcedimento" AS id_procedimento
+	, PRD."NmApelido" AS nome_procedimento
+	, (COALESCE(EDR."DsEndereco", '') || ' , ' || COALESCE(EDR."NrEndereco", '') || ' - ' || COALESCE(EDR."NmComplemento", '')) AS endereco
+	FROM		
+		"T0102_Agendamento"				AGD	
+	INNER JOIN
+		"T0199_Procedimento"					PRD
+	ON
+		PRD."IdProcedimento"					= AGD."IdProcedimento"
+	AND PRD."StExclusao"				= FALSE
+	INNER JOIN 
+		"T0199_Modalidade" MDL
+	ON 
+		PRD."IdModalidade" = MDL."IdModalidade"
+	INNER JOIN "T0000_Endereco" EDR
+	ON AGD."IdUnidade" = EDR."IdRegistro"
+	AND EDR."IdEntidadeNegocio" = '0199013'
+	LEFT JOIN
+		"T0102_Atendimento_Agendamento"	AAT
+	ON
+		AAT."IdAgendamento"				= AGD."IdAgendamento"
+	AND AAT."StExclusao"				= FALSE
+	LEFT  JOIN 
+		"T0102_Atendimento" 				ATD
+	ON 
+		ATD."IdAtendimento"					= AAT."IdAtendimento"
+	AND ATD."IdPaciente"					=  AGD."IdPaciente"
+	LEFT JOIN 
+		"T0102_Protocolo" PTC
+	ON 
+		ATD."IdAtendimento" = PTC."IdAtendimento"
+	LEFT JOIN
+		"T0000_AssociacaoRegistros"			ASR
+	ON
+		ASR."IdEntidadeNegocioA"			= '0102009'
+	AND	ASR."IdEntidadeNegocioB"			= '0102012'
+	AND ASR."IdRegistroB"					= PTC."IdProtocolo"::CHARACTER VARYING
+	AND ASR."StExclusao"					= FALSE
+	LEFT JOIN 
+		"T0000_StatusRegistro" 				STR
+	ON
+		STR."IdEntidadeNegocio" 			= '0102009'
+	AND STR."IdRegistro" 					= ASR."IdRegistroA"
+	AND STR."IdEtapa" 						= '0102001005'
+	AND STR."IdStatus" 						= '0102001005001'
+	WHERE 		
+		AGD."IdPaciente"				= 22
+	AND AGD."StExclusao"				= FALSE
+	AND AGD."StCancelado"				= FALSE
+	AND AAT."IdAtendimento"				IS NULL
+	ORDER BY 
+		AGD."DtAgendamento") x}
+20:54:44 - Called /Futurofone/atendimentos?id_cliente=22: 
+{Recieved:
+ contato=22 
+ Returning : 
+"[{\"Id\":124,\"status\":\"EXPIRADO\",\"data_agendado\":\"18\/08\/2020\",\"hora_agendado\":\"08:55\",\"id_modalidade\":\"000010000100001\",\"nome_modalidadade\":\"RESSON\u00c2NCIA\",\"id_procedimento\":\"000010000100005\",\"nome_procedimento\":\"RM - ABDOME TOTAL\",\"endereco\":\"RUA DO TESTE , 0000 - \"}]"}
+20:54:55 - Called /Futurofone/laudos?id_atendimento=124: 
+{Parâmetros recebidos: id_atendimento=124 }
+20:54:55 - Called /Futurofone/laudos?id_atendimento=124: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 124
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+20:55:11 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+20:55:11 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+20:55:12 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[]"}
+20:56:21 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+20:56:21 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+20:56:22 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+21:05:16 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+21:05:16 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+21:05:17 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+21:05:47 - Called /Futurofone/laudos?id_atendimento=86&id_procedimento=000010000100005: 
+{Parâmetros recebidos: id_atendimento=86&id_procedimento=000010000100005 }
+21:05:47 - Called /Futurofone/laudos?id_atendimento=86&id_procedimento=000010000100005: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND PRD."IdProcedimento" = '000010000100005' ) x;
+}
+21:05:48 - Called /Futurofone/laudos?id_atendimento=86&id_procedimento=000010000100005: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+21:16:59 - Called /Futurofone/preparos?id_procedimento=000010000100005: 
+{Parâmetros recebidos: id_procedimento=000010000100005 }
+21:16:59 - Called /Futurofone/preparos?id_procedimento=000010000100005: 
+{Query:
+ SELECT row_to_json(x) AS preparos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = CFG."IdRegistro"
+WHERE PRD."IdProcedimento" = '000010000100005'
+AND CFG."IdEntidadeNegocio" = '0199019') x}
+21:17:06 - Called /Futurofone/preparos?id_procedimento=000010000100009: 
+{Parâmetros recebidos: id_procedimento=000010000100009 }
+21:17:06 - Called /Futurofone/preparos?id_procedimento=000010000100009: 
+{Query:
+ SELECT row_to_json(x) AS preparos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = CFG."IdRegistro"
+WHERE PRD."IdProcedimento" = '000010000100009'
+AND CFG."IdEntidadeNegocio" = '0199019') x}
+21:17:06 - Called /Futurofone/preparos?id_procedimento=000010000100009: 
+{Recieved:
+ contato=000010000100009 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20\\\\par\\r\\n}\\r\\n\"}]"}
+21:19:05 - Called /Futurofone/preparos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+21:26:17 - Called /Futurofone/preparos?id_atendimento=89: 
+{Parâmetros recebidos: id_atendimento=89 }
+21:26:17 - Called /Futurofone/preparos?id_atendimento=89: 
+{Query:
+ SELECT row_to_json(x) AS preparos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = CFG."IdRegistro"
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdProcedimento" =  PRD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 89
+AND CFG."IdEntidadeNegocio" = '0199019'
+) x}
+21:26:17 - Called /Futurofone/preparos?id_atendimento=89: 
+{Recieved:
+ contato=89 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 PREPARO\\\\par\\r\\n}\\r\\n\"}]"}
+21:58:09 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Parâmetros recebidos: id_atendimento=89 }
+21:58:09 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Query:
+ UPDATE "T0102_Agendamento" SET "StConfirmado" = TRUE WHERE "IdAgendamento" = 89}
+22:04:06 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Parâmetros recebidos: id_atendimento=89 }
+22:04:06 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Query:
+ UPDATE "T0102_Agendamento" SET "StConfirmado" = TRUE WHERE "IdAgendamento" = 89}
+22:04:07 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Recieved:
+ contato=89 
+ Returning : 
+"[{\"mensagem_sucesso\": \"Agendamento confirmado com sucesso.\"}]"}
+22:04:20 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Parâmetros recebidos: id_atendimento=89 }
+22:04:20 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Query:
+ UPDATE "T0102_Agendamento" SET "StConfirmado" = TRUE WHERE "IdAgendamento" = 89}
+22:04:20 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Recieved:
+ contato=89 
+ Returning : 
+"[{\"mensagem_sucesso\": \"Agendamento confirmado com sucesso.\"}]"}
+22:05:34 - Called /Futurofone/atendimentos/confirmado?id_atendimento=15255252: 
+{Parâmetros recebidos: id_atendimento=15255252 }
+22:05:34 - Called /Futurofone/atendimentos/confirmado?id_atendimento=15255252: 
+{Query:
+ UPDATE "T0102_Agendamento" SET "StConfirmado" = TRUE WHERE "IdAgendamento" = 15255252}
+22:05:44 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Parâmetros recebidos: id_atendimento=89 }
+22:05:44 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Query:
+ UPDATE "T0102_Agendamento" SET "StConfirmado" = TRUE WHERE "IdAgendamento" = 89}
+22:05:44 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Recieved:
+ contato=89 
+ Returning : 
+"[{\"mensagem_sucesso\": \"Agendamento confirmado com sucesso.\"}]"}
+22:10:59 - Called /Futurofone/atendimentos/cancelado?id_atendimento=89: 
+{Parâmetros recebidos: id_atendimento=89 }
+22:10:59 - Called /Futurofone/atendimentos/cancelado?id_atendimento=89: 
+{Query:
+ UPDATE "T0102_Agendamento" SET "StConfirmado" = TRUE WHERE "IdAgendamento" = 89}
+22:10:59 - Called /Futurofone/atendimentos/cancelado?id_atendimento=89: 
+{Recieved:
+ contato=89 
+ Returning : 
+"[{\"mensagem_sucesso\": \"Agendamento confirmado com sucesso.\"}]"}
+22:11:31 - Called /Futurofone/atendimentos/cancelado?id_atendimento=89: 
+{Parâmetros recebidos: id_atendimento=89 }
+22:11:31 - Called /Futurofone/atendimentos/cancelado?id_atendimento=89: 
+{Query:
+ UPDATE "T0102_Agendamento" SET "StCancelado" = TRUE WHERE "IdAgendamento" = 89}
+22:11:31 - Called /Futurofone/atendimentos/cancelado?id_atendimento=89: 
+{Recieved:
+ contato=89 
+ Returning : 
+"[{\"mensagem_sucesso\": \"Agendamento cancelado com sucesso.\"}]"}
+22:47:55 - Called /Futurofone/clientes?contato=11998697292: 
+{Parâmetros recebidos: {
+	"telefone": "1199999999",
+	"porta": "3000",
+	"mensagem": "olá",
+	"dataHora": "2020-03-13 15:59:00"
+}
+
+ }
+22:48:03 - Called /Futurofone/clientes?contato=11998697292: 
+{Parâmetros recebidos: {
+	"telefone": "1199999999",
+	"porta": "3000",
+	"mensagem": "olá",
+	"dataHora": "2020-03-13 15:59:00"
+}
+
+ }
+22:48:09 - Called /Futurofone/clientes?contato=11998697292: 
+{Parâmetros recebidos: {
+	"telefone": "1199999999",
+	"porta": "3000",
+	"mensagem": "olá",
+	"dataHora": "2020-03-13 15:59:00"
+}
+
+ }
+22:50:24 - Called /Futurofone/clientes?contato=11998697292: 
+{Parâmetros recebidos: contato=11998697292 }
+22:50:24 - Called /Futurofone/clientes?contato=11998697292: 
+{Query:
+ SELECT row_to_json(x) AS Pacientes
+	FROM (SELECT 
+	      "IdPaciente" as  Id,
+	      "NmPaciente" as  Nome,
+	      "DtNascimento" as  data_nascimento
+	      from "T0199_Paciente"  P INNER JOIN "T0000_Contato" C
+	      ON P."IdPaciente"::varchar = C."IdRegistro"
+	      AND C."IdEntidadeNegocio" = '0199015'
+          where  ( C."CdDDD1" = left('11998697292',2) AND  REPLACE(C."NrTelefone1", '-', '') = right('11998697292',9))
+           OR    ( C."CdDDD2" = left('11998697292',2) AND  REPLACE(C."NrTelefone2", '-', '') = right('11998697292',9))       
+           OR    ( C."CdDDD3" = left('11998697292',2) AND  REPLACE(C."NrTelefone3", '-', '') = right('11998697292',9))
+                 ) x;}
+22:50:24 - Called /Futurofone/clientes?contato=11998697292: 
+{Recieved:
+ contato=11998697292 
+ Returning : 
+"[{\"id\":22,\"nome\":\"Emilly Gabriela Nair Cavalcanti\",\"data_nascimento\":\"1995-06-14\"}]"}
+22:57:08 - Called /Futurofone/clientes?contato=11998697292: 
+{Parâmetros recebidos: contato=11998697292 }
+22:57:08 - Called /Futurofone/clientes?contato=11998697292: 
+{Query:
+ SELECT row_to_json(x) AS Pacientes
+	FROM (SELECT 
+	      "IdPaciente" as  Id,
+	      "NmPaciente" as  Nome,
+	      "DtNascimento" as  data_nascimento
+	      from "T0199_Paciente"  P INNER JOIN "T0000_Contato" C
+	      ON P."IdPaciente"::varchar = C."IdRegistro"
+	      AND C."IdEntidadeNegocio" = '0199015'
+          where  ( C."CdDDD1" = left('11998697292',2) AND  REPLACE(C."NrTelefone1", '-', '') = right('11998697292',9))
+           OR    ( C."CdDDD2" = left('11998697292',2) AND  REPLACE(C."NrTelefone2", '-', '') = right('11998697292',9))       
+           OR    ( C."CdDDD3" = left('11998697292',2) AND  REPLACE(C."NrTelefone3", '-', '') = right('11998697292',9))
+                 ) x;}
+22:57:08 - Called /Futurofone/clientes?contato=11998697292: 
+{Recieved:
+ contato=11998697292 
+ Returning : 
+"[{\"id\":22,\"nome\":\"Emilly Gabriela Nair Cavalcanti\",\"data_nascimento\":\"1995-06-14\"}]"}
+23:04:06 - Called /Futurofone/clientes?contato=11998697292: 
+{Parâmetros recebidos: contato=11998697292 }
+23:04:06 - Called /Futurofone/clientes?contato=11998697292: 
+{Query:
+ SELECT row_to_json(x) AS Pacientes
+	FROM (SELECT 
+	      "IdPaciente" as  Id,
+	      "NmPaciente" as  Nome,
+	      "DtNascimento" as  data_nascimento
+	      from "T0199_Paciente"  P INNER JOIN "T0000_Contato" C
+	      ON P."IdPaciente"::varchar = C."IdRegistro"
+	      AND C."IdEntidadeNegocio" = '0199015'
+          where  ( C."CdDDD1" = left('11998697292',2) AND  REPLACE(C."NrTelefone1", '-', '') = right('11998697292',9))
+           OR    ( C."CdDDD2" = left('11998697292',2) AND  REPLACE(C."NrTelefone2", '-', '') = right('11998697292',9))       
+           OR    ( C."CdDDD3" = left('11998697292',2) AND  REPLACE(C."NrTelefone3", '-', '') = right('11998697292',9))
+                 ) x;}
+23:04:07 - Called /Futurofone/clientes?contato=11998697292: 
+{Recieved:
+ contato=11998697292 
+ Returning : 
+"[{\"id\":22,\"nome\":\"Emilly Gabriela Nair Cavalcanti\",\"data_nascimento\":\"1995-06-14\"}]"}
+23:22:42 - Called /Futurofone/clientes?contato=11998697292: 
+{Parâmetros recebidos: contato=11998697292 }
+23:22:42 - Called /Futurofone/clientes?contato=11998697292: 
+{Query:
+ SELECT row_to_json(x) AS Pacientes
+	FROM (SELECT 
+	      "IdPaciente" as  Id,
+	      "NmPaciente" as  Nome,
+	      "DtNascimento" as  data_nascimento
+	      from "T0199_Paciente"  P INNER JOIN "T0000_Contato" C
+	      ON P."IdPaciente"::varchar = C."IdRegistro"
+	      AND C."IdEntidadeNegocio" = '0199015'
+          where  ( C."CdDDD1" = left('11998697292',2) AND  REPLACE(C."NrTelefone1", '-', '') = right('11998697292',9))
+           OR    ( C."CdDDD2" = left('11998697292',2) AND  REPLACE(C."NrTelefone2", '-', '') = right('11998697292',9))       
+           OR    ( C."CdDDD3" = left('11998697292',2) AND  REPLACE(C."NrTelefone3", '-', '') = right('11998697292',9))
+                 ) x;}
+23:22:42 - Called /Futurofone/clientes?contato=11998697292: 
+{Recieved:
+ contato=11998697292 
+ Returning : 
+"[{\"id\":22,\"nome\":\"Emilly Gabriela Nair Cavalcanti\",\"data_nascimento\":\"1995-06-14\"}]"}
+23:55:01 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+23:55:01 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+23:55:02 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+23:55:35 - Called /Futurofone/laudos?id_atendimento=86&id_procedimento=000010000100005: 
+{Parâmetros recebidos: id_atendimento=86&id_procedimento=000010000100005 }
+23:55:35 - Called /Futurofone/laudos?id_atendimento=86&id_procedimento=000010000100005: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND PRD."IdProcedimento" = '000010000100005' ) x;
+}
+23:55:35 - Called /Futurofone/laudos?id_atendimento=86&id_procedimento=000010000100005: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+23:56:51 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Parâmetros recebidos: id_atendimento=89 }
+23:56:51 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Query:
+ UPDATE "T0102_Agendamento" SET "StConfirmado" = TRUE WHERE "IdAgendamento" = 89}
+23:56:51 - Called /Futurofone/atendimentos/confirmado?id_atendimento=89: 
+{Recieved:
+ contato=89 
+ Returning : 
+"[{\"mensagem_sucesso\": \"Agendamento confirmado com sucesso.\"}]"}
+23:57:03 - Called /Futurofone/atendimentos/cancelado?id_atendimento=89: 
+{Parâmetros recebidos: id_atendimento=89 }
+23:57:03 - Called /Futurofone/atendimentos/cancelado?id_atendimento=89: 
+{Query:
+ UPDATE "T0102_Agendamento" SET "StCancelado" = TRUE WHERE "IdAgendamento" = 89}
+23:57:04 - Called /Futurofone/atendimentos/cancelado?id_atendimento=89: 
+{Recieved:
+ contato=89 
+ Returning : 
+"[{\"mensagem_sucesso\": \"Agendamento cancelado com sucesso.\"}]"}
+23:58:46 - Called /Futurofone/clientes?contato=11998697292: 
+{Iniciando Futurofone/clientes}
+23:58:46 - Called /Futurofone/clientes?contato=11998697292: 
+{Parâmetros recebidos: contato=11998697292 }
+23:58:46 - Called /Futurofone/clientes?contato=11998697292: 
+{Query:
+ SELECT row_to_json(x) AS Pacientes
+	FROM (SELECT 
+	      "IdPaciente" as  Id,
+	      "NmPaciente" as  Nome,
+	      "DtNascimento" as  data_nascimento
+	      from "T0199_Paciente"  P INNER JOIN "T0000_Contato" C
+	      ON P."IdPaciente"::varchar = C."IdRegistro"
+	      AND C."IdEntidadeNegocio" = '0199015'
+          where  ( C."CdDDD1" = left('11998697292',2) AND  REPLACE(C."NrTelefone1", '-', '') = right('11998697292',9))
+           OR    ( C."CdDDD2" = left('11998697292',2) AND  REPLACE(C."NrTelefone2", '-', '') = right('11998697292',9))       
+           OR    ( C."CdDDD3" = left('11998697292',2) AND  REPLACE(C."NrTelefone3", '-', '') = right('11998697292',9))
+                 ) x;}
+23:58:46 - Called /Futurofone/clientes?contato=11998697292: 
+{Recieved:
+ contato=11998697292 
+ Returning : 
+"[{\"id\":22,\"nome\":\"Emilly Gabriela Nair Cavalcanti\",\"data_nascimento\":\"1995-06-14\"}]"}

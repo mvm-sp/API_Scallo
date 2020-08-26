@@ -1,0 +1,80 @@
+01:05:18Call GravaLigacao : {uid = aaa
+eventoUid = 123
+valor = 1
+}
+01:06:27 - Call GravaLigacao : {uid = aaa
+eventoUid = 123
+valor = 1
+}
+01:15:35 - Called /futurofone/GravarLigacao: \n{uid = aaa
+eventoUid = 123
+valor = 1
+}
+01:16:59 - Called /futurofone/GravarLigacao: 
+{uid = aaa
+eventoUid = 123
+valor = 1
+}
+11:53:38 - Called /futurofone/GravarLigacao: 
+{Nada...}
+11:54:30 - Called /futurofone/GravarLigacao: 
+{Nada...}
+11:56:03 - Called /futurofone/GravarLigacao: 
+{uid = aaa
+eventoUid = 123
+valor = 1
+}
+11:57:02 - Called /futurofone/GravarLigacao: 
+{uniqueid = 000001.01
+uuid = 000001.02
+direcao = entrada
+src = 11981081011
+dst = 1142106262
+calldate = 2020-04-08 12:00:00
+calldateend = 2020-04-08 12:01:00
+status = answer
+ura = Principal,Agendamento
+fila = principal
+classificacao = Normal
+cpf = 19119119100
+src_cidade = São Paulo
+src_uf = SP
+src_ramal = 0001
+src_agente = 2001
+dst_ramal = 0002
+dst_agente = 2002
+}
+14:41:23 - Called /Futurofone/CampanhaContatoRetornoAgendaCadastrar: 
+{uniqueid = 1584125940.36
+uuid = AGI*5e6bd7f4c7cee
+src = 021988771122
+dst = 0000
+calldate = 2020-03-13 15:59:00
+direcao = entrada
+}
+14:43:09 - Called /Futurofone/SMSReceber: 
+{telefone = 1584125940.36
+porta = AGI*5e6bd7f4c7cee
+mensagem = 021988771122
+dataHora = 2020-03-13 15:59:00
+}
+14:43:54 - Called /Futurofone/SMSReceber: 
+{telefone = 1199999999
+porta = 3000
+mensagem = olá
+dataHora = 2020-03-13 15:59:00
+}
+14:45:20 - Called /Futurofone/CampanhaContatoListar: 
+{Erro : Exception: Parse do parêmetro JSON... in C:\Apache24\htdocs\rest\api\common.php:90
+Stack trace:
+#0 C:\Apache24\htdocs\rest\api\CampanhaContatoListar.php(9): parseParameterBodyType()
+#1 {main}
+}
+14:57:27 - Called /Futurofone/CampanhaContatoRetornoCadastrar: 
+{uniqueid = 1584125940.36
+uuid = AGI*5e6bd7f4c7cee
+src = 021988771122
+dst = 0000
+calldate = 2020-03-13 15:59:00
+direcao = entrada
+}

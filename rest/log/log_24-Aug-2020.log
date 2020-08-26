@@ -1,0 +1,781 @@
+12:19:55 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:19:55 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:20:42 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:20:42 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:20:42 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:25:46 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:25:46 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:25:46 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF =>}
+12:25:46 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:26:37 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:26:37 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:26:38 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF =>}
+12:26:38 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:27:11 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:27:11 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:27:11 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF =>"}
+12:27:11 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:28:12 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:28:12 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:28:12 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = "}
+12:28:12 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:29:08 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:29:08 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:29:08 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = "{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}"}
+12:29:08 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:29:43 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:29:43 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:29:43 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {"orientacoes_e_preparo":"{\\rtf1\\ansi\\ansicpg1252\\deff0\\nouicompat\\deflang1046{\\fonttbl{\\f0\\fnil\\fcharset0 Microsoft Sans Serif;}}\r\n{\\*\\generator Riched20 10.0.18362}\\viewkind4\\uc1 \r\n\\pard\\f0\\fs20 MODELO de LAUDO MAMA\\par\r\n}\r\n"}}
+12:29:43 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:30:33 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:30:33 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:30:34 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = }
+12:30:34 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:31:57 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:31:57 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:31:57 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+12:31:57 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:38:12 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:38:12 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:38:12 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+12:38:12 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:41:08 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:41:08 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:41:08 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+12:41:08 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:45:16 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:45:16 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:45:16 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+12:45:16 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:46:12 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:46:12 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:46:13 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+12:46:13 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:46:31 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:46:31 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:46:31 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+12:46:31 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:47:27 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:47:27 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:47:27 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+12:47:27 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:49:19 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:49:19 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:49:20 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+12:49:20 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do HTML = <span style='font-size: 14px;'>MODELO de LAUDO MAMA</span><p>}
+12:49:20 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:52:23 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:52:23 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:52:23 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+12:52:23 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do HTML = <span style='font-size: 14px;'>MODELO de LAUDO MAMA</span><p>}
+12:52:23 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"{\\\\rtf1\\\\ansi\\\\ansicpg1252\\\\deff0\\\\nouicompat\\\\deflang1046{\\\\fonttbl{\\\\f0\\\\fnil\\\\fcharset0 Microsoft Sans Serif;}}\\r\\n{\\\\*\\\\generator Riched20 10.0.18362}\\\\viewkind4\\\\uc1 \\r\\n\\\\pard\\\\f0\\\\fs20 MODELO de LAUDO MAMA\\\\par\\r\\n}\\r\\n\"}]"}
+12:57:29 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:57:29 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:57:29 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+12:57:29 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do HTML = <span style='font-size: 14px;'>MODELO de LAUDO MAMA</span><p>}
+12:58:24 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:58:24 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:58:24 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+12:58:24 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do HTML = <span style='font-size: 14px;'>MODELO de LAUDO MAMA</span><p>}
+12:59:28 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+12:59:28 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+12:59:28 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+12:59:28 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do HTML = <span style='font-size: 14px;'>MODELO de LAUDO MAMA</span><p>}
+12:59:28 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"<span style='font-size: 14px;'>MODELO de LAUDO MAMA<\\\/span><p>\"}]"}
+13:00:11 - Called /Futurofone/laudos?id_atendimento=89: 
+{Parâmetros recebidos: id_atendimento=89 }
+13:00:11 - Called /Futurofone/laudos?id_atendimento=89: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 89
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+13:00:20 - Called /Futurofone/laudos?id_atendimento=81: 
+{Parâmetros recebidos: id_atendimento=81 }
+13:00:20 - Called /Futurofone/laudos?id_atendimento=81: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 81
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+13:00:25 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+13:00:25 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+13:00:26 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+13:00:26 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do HTML = <span style='font-size: 14px;'>MODELO de LAUDO MAMA</span><p>}
+13:00:26 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"<span style='font-size: 14px;'>MODELO de LAUDO MAMA<\\\/span><p>\"}]"}
+13:28:09 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+13:28:09 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+13:28:10 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+13:28:10 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do HTML = <span style='font-size: 14px;'>MODELO de LAUDO MAMA</span><p>}
+13:28:10 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[eyJvcmllbnRhY29lc19lX3ByZXBhcm8iOiI8c3BhbiBzdHlsZT0nZm9udC1zaXplOiAxNHB4Oyc+TU9ERUxPIGRlIExBVURPIE1BTUE8XC9zcGFuPjxwPiJ9]"}
+13:34:17 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+13:34:17 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+13:34:17 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+13:34:17 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do HTML = <span style='font-size: 14px;'>MODELO de LAUDO MAMA</span><p>}
+13:34:17 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"PHNwYW4gc3R5bGU9J2ZvbnQtc2l6ZTogMTRweDsnPk1PREVMTyBkZSBMQVVETyBNQU1BPC9zcGFuPjxwPg==\"}]"}
+13:41:03 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+13:41:03 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+13:41:03 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+13:41:03 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do HTML = <span style='font-size: 14px;'>MODELO de LAUDO MAMA</span><p>}
+13:41:03 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"PHNwYW4gc3R5bGU9J2ZvbnQtc2l6ZTogMTRweDsnPk1PREVMTyBkZSBMQVVETyBNQU1BPC9zcGFuPjxwPg==\"}]"}
+14:50:11 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+14:50:11 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS laudos
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+14:50:11 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = }
+14:51:22 - Called /Futurofone/laudos?id_atendimento=86: 
+{Parâmetros recebidos: id_atendimento=86 }
+14:51:22 - Called /Futurofone/laudos?id_atendimento=86: 
+{Query:
+ SELECT row_to_json(x) AS laudos
+	FROM (SELECT CFG."VlConfiguracao" AS laudo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0105_Laudo" LAU  ON CFG."IdRegistro" = LAU."IdLaudo"::varchar
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdAgendamento" = LAU."IdAgendamento"
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = AGD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 86
+AND CFG."IdEntidadeNegocio" = '0105003'
+AND 1=1 ) x;
+}
+14:51:22 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 MODELO de LAUDO MAMA\par
+}
+}
+14:51:22 - Called /Futurofone/laudos?id_atendimento=86: 
+{Corpo do HTML = <span style='font-size: 14px;'>MODELO de LAUDO MAMA</span><p>}
+14:51:22 - Called /Futurofone/laudos?id_atendimento=86: 
+{Recieved:
+ contato=86 
+ Returning : 
+"[{\"laudo\":\"PHNwYW4gc3R5bGU9J2ZvbnQtc2l6ZTogMTRweDsnPk1PREVMTyBkZSBMQVVETyBNQU1BPC9zcGFuPjxwPg==\"}]"}
+17:30:10 - Called /Futurofone/procedimentos?id_procedimento=000010000100002: 
+{Parâmetros recebidos: id_procedimento=000010000100002 }
+17:30:10 - Called /Futurofone/procedimentos?id_procedimento=000010000100002: 
+{Query:
+ SELECT row_to_json(x) AS procedimentos
+	FROM (SELECT PRD."IdProcedimento" AS Id,
+       PRD."NmApelido" AS Nome,
+       CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG INNER JOIN "T0199_Procedimento" PRD ON CFG."IdRegistro" = PRD."IdProcedimento"
+AND PRD."IdProcedimento" = '000010000100002'
+AND cfg."IdEntidadeNegocio" = '0199019') x}
+17:30:10 - Called /Futurofone/procedimentos?id_procedimento=000010000100002: 
+{Corpo do RTF = }
+17:31:15 - Called /Futurofone/procedimentos?id_procedimento=000010000100002: 
+{Parâmetros recebidos: id_procedimento=000010000100002 }
+17:31:15 - Called /Futurofone/procedimentos?id_procedimento=000010000100002: 
+{Query:
+ SELECT row_to_json(x) AS procedimentos
+	FROM (SELECT PRD."IdProcedimento" AS Id,
+       PRD."NmApelido" AS Nome,
+       CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG INNER JOIN "T0199_Procedimento" PRD ON CFG."IdRegistro" = PRD."IdProcedimento"
+AND PRD."IdProcedimento" = '000010000100002'
+AND cfg."IdEntidadeNegocio" = '0199019') x}
+17:31:16 - Called /Futurofone/procedimentos?id_procedimento=000010000100002: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 PREPARO\par
+}
+}
+17:31:16 - Called /Futurofone/procedimentos?id_procedimento=000010000100002: 
+{Corpo do HTML = <span style='font-size: 14px;'>PREPARO</span><p>}
+17:31:16 - Called /Futurofone/procedimentos?id_procedimento=000010000100002: 
+{Recieved:
+ contato=000010000100002 
+ Returning : 
+"[{\"id\":\"000010000100002\",\"nome\":\"RM - MAMA\",\"orientacoes_e_preparo\":\"PHNwYW4gc3R5bGU9J2ZvbnQtc2l6ZTogMTRweDsnPlBSRVBBUk88L3NwYW4+PHA+\"}]"}
+17:32:29 - Called /Futurofone/preparos?id_atendimento=89: 
+{Parâmetros recebidos: id_atendimento=89 }
+17:32:29 - Called /Futurofone/preparos?id_atendimento=89: 
+{Query:
+ SELECT row_to_json(x) AS preparos
+	FROM (SELECT CFG."VlConfiguracao" AS orientacoes_e_preparo
+FROM "T0000_Configuracao" CFG 
+INNER JOIN "T0199_Procedimento" PRD 
+ON PRD."IdProcedimento" = CFG."IdRegistro"
+INNER JOIN "T0102_Agendamento" AGD
+ON AGD."IdProcedimento" =  PRD."IdProcedimento"
+WHERE AGD."IdAgendamento"  = 89
+AND CFG."IdEntidadeNegocio" = '0199019'
+) x}
+17:32:30 - Called /Futurofone/preparos?id_atendimento=89: 
+{Corpo do RTF = {\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 PREPARO\par
+}
+}
+17:32:30 - Called /Futurofone/preparos?id_atendimento=89: 
+{Corpo do HTML = <span style='font-size: 14px;'>PREPARO</span><p>}
+17:32:30 - Called /Futurofone/preparos?id_atendimento=89: 
+{Recieved:
+ contato=89 
+ Returning : 
+"[{\"orientacoes_e_preparo\":\"PHNwYW4gc3R5bGU9J2ZvbnQtc2l6ZTogMTRweDsnPlBSRVBBUk88L3NwYW4+PHA+\"}]"}

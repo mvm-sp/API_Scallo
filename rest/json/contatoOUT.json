@@ -1,0 +1,51 @@
+{
+	"codigo": 200,
+	"mensagem": "",
+	"erros": "",
+	"retorno": [
+    {
+        "uid": "1",
+        "telefone": "011981081011",
+        "detalhe": [
+            {
+                "variavel": "empresa",
+                "valor": "1,1"
+            },
+            {
+                "variavel": "evento",
+                "valor": "16,17"
+            },
+            {
+                "variavel": "dataHora",
+                "valor": "2020-04-07 15:00:00,2020-04-07 15:30:00"
+            },
+            {
+                "variavel": "eventoUid",
+                "valor": "123456,321654"
+            }
+        ]
+    },
+    {
+        "uid": "2",
+        "telefone": "011982022483",
+        "detalhe": [
+            {
+                "variavel": "empresa",
+                "valor": "1,1"
+            },
+            {
+                "variavel": "evento",
+                "valor": "16,17"
+            },
+            {
+                "variavel": "dataHora",
+                "valor": "2020-04-07 15:00:00,2020-04-07 15:30:00"
+            },
+            {
+                "variavel": "eventoUid",
+                "valor": "123456,321654"
+            }
+        ]
+    }
+]
+}

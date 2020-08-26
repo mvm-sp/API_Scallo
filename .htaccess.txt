@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^(phpinfo/?)$ /phpinfo.php [NC,R=301,L]

@@ -1,0 +1,113 @@
+20:26:17 - Called /Futurofone/CampanhaContatoListar: 
+{Parâmetros recebidos: {
+	"codigo": "111"
+}
+
+ }
+20:27:05 - Called /Futurofone/CampanhaContatoListar: 
+{Parâmetros recebidos:  }
+20:28:02 - Called /Futurofone/CampanhaContatoListar: 
+{Parâmetros recebidos:  }
+20:29:16 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Parâmetros recebidos:  }
+20:29:16 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Erro : Exception: Lendo parâmetro json... in C:\Apache24\htdocs\rest\api\common.php:150
+Stack trace:
+#0 C:\Apache24\htdocs\rest\api\CampanhaContatoListar.php(9): parseParameterQueryType()
+#1 {main}
+}
+20:30:36 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Parâmetros recebidos:  }
+20:30:36 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Erro : Exception: Lendo parâmetro da QueryString... in C:\Apache24\htdocs\rest\api\common.php:150
+Stack trace:
+#0 C:\Apache24\htdocs\rest\api\CampanhaContatoListar.php(9): parseParameterQueryType()
+#1 {main}
+}
+20:32:45 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Parâmetros recebidos: codigo=111 }
+20:32:45 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{URL }
+20:34:06 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Parâmetros recebidos: codigo=111 }
+20:34:06 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{URL codigo=111}
+20:35:28 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Parâmetros recebidos: codigo=111 }
+20:36:47 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Parâmetros recebidos: codigo=111 }
+20:39:43 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Parâmetros recebidos: codigo=111 }
+20:40:51 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Parâmetros recebidos: codigo=111 }
+20:40:51 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Recieved: codigo=111 
+ Returning : 
+{"codigo":200,"mensagem":"","erros":"","retorno":[{"uid":"1","telefone":"11981081011","detalhe":[{"variavel":"empresa","valor":"1,1"},{"variavel":"evento","valor":"16,17"},{"variavel":"dataHora","valor":"2020-04-07 15:00:00,2020-04-07 15:30:00"},{"variavel":"eventoUid","valor":"123456,321654"}]},{"uid":"2","telefone":"11982022483","detalhe":[{"variavel":"empresa","valor":"1,1"},{"variavel":"evento","valor":"16,17"},{"variavel":"dataHora","valor":"2020-04-07 15:00:00,2020-04-07 15:30:00"},{"variavel":"eventoUid","valor":"123456,321654"}]}]}}
+20:41:43 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Parâmetros recebidos: codigo=111 }
+20:41:43 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Recieved:
+ codigo=111 
+ Returning : 
+{"codigo":200,"mensagem":"","erros":"","retorno":[{"uid":"1","telefone":"11981081011","detalhe":[{"variavel":"empresa","valor":"1,1"},{"variavel":"evento","valor":"16,17"},{"variavel":"dataHora","valor":"2020-04-07 15:00:00,2020-04-07 15:30:00"},{"variavel":"eventoUid","valor":"123456,321654"}]},{"uid":"2","telefone":"11982022483","detalhe":[{"variavel":"empresa","valor":"1,1"},{"variavel":"evento","valor":"16,17"},{"variavel":"dataHora","valor":"2020-04-07 15:00:00,2020-04-07 15:30:00"},{"variavel":"eventoUid","valor":"123456,321654"}]}]}}
+20:42:30 - Called /Futurofone/CampanhaContatoListar?codigo=1: 
+{Parâmetros recebidos: codigo=1 }
+20:42:30 - Called /Futurofone/CampanhaContatoListar?codigo=1: 
+{Recieved:
+ codigo=1 
+ Returning : 
+{"codigo":200,"mensagem":"","erros":"","retorno":[{"uid":"1","telefone":"11981081011","detalhe":[{"variavel":"empresa","valor":"1,1"},{"variavel":"evento","valor":"16,17"},{"variavel":"dataHora","valor":"2020-04-07 15:00:00,2020-04-07 15:30:00"},{"variavel":"eventoUid","valor":"123456,321654"}]},{"uid":"2","telefone":"11982022483","detalhe":[{"variavel":"empresa","valor":"1,1"},{"variavel":"evento","valor":"16,17"},{"variavel":"dataHora","valor":"2020-04-07 15:00:00,2020-04-07 15:30:00"},{"variavel":"eventoUid","valor":"123456,321654"}]}]}}
+20:43:01 - Called /Futurofone/CampanhaContatoListar: 
+{Parâmetros recebidos:  }
+20:43:01 - Called /Futurofone/CampanhaContatoListar: 
+{Erro : Exception: Lendo parâmetro da QueryString... in C:\Apache24\htdocs\rest\api\common.php:151
+Stack trace:
+#0 C:\Apache24\htdocs\rest\api\CampanhaContatoListar.php(9): parseParameterQueryType()
+#1 {main}
+}
+20:43:01 - Called /Futurofone/CampanhaContatoListar: 
+{Recieved:
+ codigo= 
+ Returning : 
+{"codigo":200,"mensagem":"","erros":"","retorno":[{"uid":"1","telefone":"11981081011","detalhe":[{"variavel":"empresa","valor":"1,1"},{"variavel":"evento","valor":"16,17"},{"variavel":"dataHora","valor":"2020-04-07 15:00:00,2020-04-07 15:30:00"},{"variavel":"eventoUid","valor":"123456,321654"}]},{"uid":"2","telefone":"11982022483","detalhe":[{"variavel":"empresa","valor":"1,1"},{"variavel":"evento","valor":"16,17"},{"variavel":"dataHora","valor":"2020-04-07 15:00:00,2020-04-07 15:30:00"},{"variavel":"eventoUid","valor":"123456,321654"}]}]}}
+20:46:27 - Called /Futurofone/CampanhaContatoListar: 
+{Parâmetros recebidos:  }
+20:46:27 - Called /Futurofone/CampanhaContatoListar: 
+{Erro : Exception: Lendo parâmetro da QueryString... in C:\Apache24\htdocs\rest\api\common.php:151
+Stack trace:
+#0 C:\Apache24\htdocs\rest\api\CampanhaContatoListar.php(9): parseParameterQueryType()
+#1 {main}
+}
+20:46:59 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Parâmetros recebidos: codigo=111 }
+20:46:59 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Recieved:
+ codigo=111 
+ Returning : 
+{"codigo":200,"mensagem":"","erros":"","retorno":[{"uid":"1","telefone":"11981081011","detalhe":[{"variavel":"empresa","valor":"1,1"},{"variavel":"evento","valor":"16,17"},{"variavel":"dataHora","valor":"2020-04-07 15:00:00,2020-04-07 15:30:00"},{"variavel":"eventoUid","valor":"123456,321654"}]},{"uid":"2","telefone":"11982022483","detalhe":[{"variavel":"empresa","valor":"1,1"},{"variavel":"evento","valor":"16,17"},{"variavel":"dataHora","valor":"2020-04-07 15:00:00,2020-04-07 15:30:00"},{"variavel":"eventoUid","valor":"123456,321654"}]}]}}
+20:47:07 - Called /Futurofone/CampanhaContatoListar?cdigo=111: 
+{Parâmetros recebidos: cdigo=111 }
+20:47:32 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Parâmetros recebidos: codigo=111 }
+20:47:32 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Recieved:
+ codigo=111 
+ Returning : 
+{"codigo":200,"mensagem":"","erros":"","retorno":[{"uid":"1","telefone":"11981081011","detalhe":[{"variavel":"empresa","valor":"1,1"},{"variavel":"evento","valor":"16,17"},{"variavel":"dataHora","valor":"2020-04-07 15:00:00,2020-04-07 15:30:00"},{"variavel":"eventoUid","valor":"123456,321654"}]},{"uid":"2","telefone":"11982022483","detalhe":[{"variavel":"empresa","valor":"1,1"},{"variavel":"evento","valor":"16,17"},{"variavel":"dataHora","valor":"2020-04-07 15:00:00,2020-04-07 15:30:00"},{"variavel":"eventoUid","valor":"123456,321654"}]}]}}
+20:48:09 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Parâmetros recebidos: codigo=111 }
+20:48:09 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Recieved:
+ codigo=111 
+ Returning : 
+{"codigo":200,"mensagem":"","erros":"","retorno":[{"uid":"1","telefone":"11981081011","detalhe":[{"variavel":"empresa","valor":"1,1"},{"variavel":"evento","valor":"16,17"},{"variavel":"dataHora","valor":"2020-04-07 15:00:00,2020-04-07 15:30:00"},{"variavel":"eventoUid","valor":"123456,321654"}]},{"uid":"2","telefone":"11982022483","detalhe":[{"variavel":"empresa","valor":"1,1"},{"variavel":"evento","valor":"16,17"},{"variavel":"dataHora","valor":"2020-04-07 15:00:00,2020-04-07 15:30:00"},{"variavel":"eventoUid","valor":"123456,321654"}]}]}}
+20:48:15 - Called /Futurofone/CampanhaContatoListar?cdigo=111: 
+{Parâmetros recebidos: cdigo=111 }
+20:48:42 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Parâmetros recebidos: codigo=111 }
+20:48:42 - Called /Futurofone/CampanhaContatoListar?codigo=111: 
+{Recieved:
+ codigo=111 
+ Returning : 
+{"codigo":200,"mensagem":"","erros":"","retorno":[{"uid":"1","telefone":"11981081011","detalhe":[{"variavel":"empresa","valor":"1,1"},{"variavel":"evento","valor":"16,17"},{"variavel":"dataHora","valor":"2020-04-07 15:00:00,2020-04-07 15:30:00"},{"variavel":"eventoUid","valor":"123456,321654"}]},{"uid":"2","telefone":"11982022483","detalhe":[{"variavel":"empresa","valor":"1,1"},{"variavel":"evento","valor":"16,17"},{"variavel":"dataHora","valor":"2020-04-07 15:00:00,2020-04-07 15:30:00"},{"variavel":"eventoUid","valor":"123456,321654"}]}]}}

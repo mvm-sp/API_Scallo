@@ -1,0 +1,212 @@
+12:13:34 - Called /Futurofone/atendimentos?id_cliente=22: 
+{Parâmetros recebidos: id_cliente=22 }
+12:13:34 - Called /Futurofone/atendimentos?id_cliente=22: 
+{Query:
+     SELECT row_to_json(x) AS atendimentos
+	FROM (SELECT DISTINCT
+		AGD."IdAgendamento"		AS "Id",
+		CASE 
+			WHEN PTC."StResultadoDisponivel" = FALSE THEN 'AGENDADO'
+			WHEN STR."IdRegistro" IS NOT NULL THEN 'ATENDIDO'
+			WHEN PTC."DtEntrega" IS NOT NULL THEN 'ENTREGUE'
+			WHEN PTC."StResultadoExpirado" = FALSE THEN 'DISPONÍVEL'
+			ELSE 'EXPIRADO' 
+		END :: CHARACTER VARYING		AS Status
+	, TO_CHAR(AGD."DtAgendamento", 'DD/MM/YYYY')::CHARACTER(10) 	AS  data_agendado
+	, TO_CHAR(AGD."DtAgendamento", 'HH24:MI')::CHARACTER(5) AS hora_agendado
+	, MDL."IdModalidade" AS id_modalidade
+	, MDL."NmModalidade" AS nome_modalidadade
+	, PRD."IdProcedimento" AS id_procedimento
+	, PRD."NmApelido" AS nome_procedimento
+	, (COALESCE(EDR."DsEndereco", '') || ' , ' || COALESCE(EDR."NrEndereco", '') || ' - ' || COALESCE(EDR."NmComplemento", '')) AS endereco
+	FROM		
+		"T0102_Agendamento"				AGD	
+	INNER JOIN
+		"T0199_Procedimento"					PRD
+	ON
+		PRD."IdProcedimento"					= AGD."IdProcedimento"
+	AND PRD."StExclusao"				= FALSE
+	INNER JOIN 
+		"T0199_Modalidade" MDL
+	ON 
+		PRD."IdModalidade" = MDL."IdModalidade"
+	INNER JOIN "T0000_Endereco" EDR
+	ON AGD."IdUnidade" = EDR."IdRegistro"
+	AND EDR."IdEntidadeNegocio" = '0199013'
+	LEFT JOIN
+		"T0102_Atendimento_Agendamento"	AAT
+	ON
+		AAT."IdAgendamento"				= AGD."IdAgendamento"
+	AND AAT."StExclusao"				= FALSE
+	LEFT  JOIN 
+		"T0102_Atendimento" 				ATD
+	ON 
+		ATD."IdAtendimento"					= AAT."IdAtendimento"
+	AND ATD."IdPaciente"					=  AGD."IdPaciente"
+	LEFT JOIN 
+		"T0102_Protocolo" PTC
+	ON 
+		ATD."IdAtendimento" = PTC."IdAtendimento"
+	LEFT JOIN
+		"T0000_AssociacaoRegistros"			ASR
+	ON
+		ASR."IdEntidadeNegocioA"			= '0102009'
+	AND	ASR."IdEntidadeNegocioB"			= '0102012'
+	AND ASR."IdRegistroB"					= PTC."IdProtocolo"::CHARACTER VARYING
+	AND ASR."StExclusao"					= FALSE
+	LEFT JOIN 
+		"T0000_StatusRegistro" 				STR
+	ON
+		STR."IdEntidadeNegocio" 			= '0102009'
+	AND STR."IdRegistro" 					= ASR."IdRegistroA"
+	AND STR."IdEtapa" 						= '0102001005'
+	AND STR."IdStatus" 						= '0102001005001'
+	WHERE 		
+		AGD."IdPaciente"				= 22
+	AND AGD."StExclusao"				= FALSE
+	AND AGD."StCancelado"				= FALSE
+	ORDER BY 
+		AGD."IdAgendamento") x}
+12:13:35 - Called /Futurofone/atendimentos?id_cliente=22: 
+{Recieved:
+ contato=22 
+ Returning : 
+"[{\"Id\":77,\"status\":\"ENTREGUE\",\"data_agendado\":\"27\/07\/2020\",\"hora_agendado\":\"08:50\",\"id_modalidade\":\"000010000100001\",\"nome_modalidadade\":\"RESSON\u00c2NCIA\",\"id_procedimento\":\"000010000100005\",\"nome_procedimento\":\"RM - ABDOME TOTAL\",\"endereco\":\"RUA DO TESTE , 0000 - \"} , {\"Id\":82,\"status\":\"ENTREGUE\",\"data_agendado\":\"28\/07\/2020\",\"hora_agendado\":\"09:15\",\"id_modalidade\":\"000010000100001\",\"nome_modalidadade\":\"RESSON\u00c2NCIA\",\"id_procedimento\":\"000010000100005\",\"nome_procedimento\":\"RM - ABDOME TOTAL\",\"endereco\":\"RUA DO TESTE , 0000 - \"} , {\"Id\":96,\"status\":\"DISPON\u00cdVEL\",\"data_agendado\":\"31\/07\/2020\",\"hora_agendado\":\"08:30\",\"id_modalidade\":\"000010000100001\",\"nome_modalidadade\":\"RESSON\u00c2NCIA\",\"id_procedimento\":\"000010000100005\",\"nome_procedimento\":\"RM - ABDOME TOTAL\",\"endereco\":\"RUA DO TESTE , 0000 - \"} , {\"Id\":104,\"status\":\"AGENDADO\",\"data_agendado\":\"31\/07\/2020\",\"hora_agendado\":\"09:55\",\"id_modalidade\":\"000010000100001\",\"nome_modalidadade\":\"RESSON\u00c2NCIA\",\"id_procedimento\":\"000010000100002\",\"nome_procedimento\":\"RM - MAMA\",\"endereco\":\"RUA DO TESTE , 0000 - \"} , {\"Id\":118,\"status\":\"AGENDADO\",\"data_agendado\":\"17\/08\/2020\",\"hora_agendado\":\"08:55\",\"id_modalidade\":\"000010000100001\",\"nome_modalidadade\":\"RESSON\u00c2NCIA\",\"id_procedimento\":\"000010000100005\",\"nome_procedimento\":\"RM - ABDOME TOTAL\",\"endereco\":\"RUA DO TESTE , 0000 - \"} , {\"Id\":121,\"status\":\"AGENDADO\",\"data_agendado\":\"17\/08\/2020\",\"hora_agendado\":\"10:10\",\"id_modalidade\":\"000010000100001\",\"nome_modalidadade\":\"RESSON\u00c2NCIA\",\"id_procedimento\":\"000010000100005\",\"nome_procedimento\":\"RM - ABDOME TOTAL\",\"endereco\":\"RUA DO TESTE , 0000 - \"} , {\"Id\":126,\"status\":\"EXPIRADO\",\"data_agendado\":\"19\/08\/2020\",\"hora_agendado\":\"08:55\",\"id_modalidade\":\"000010000100001\",\"nome_modalidadade\":\"RESSON\u00c2NCIA\",\"id_procedimento\":\"000010000100005\",\"nome_procedimento\":\"RM - ABDOME TOTAL\",\"endereco\":\"RUA DO TESTE , 0000 - \"} , {\"Id\":127,\"status\":\"EXPIRADO\",\"data_agendado\":\"19\/08\/2020\",\"hora_agendado\":\"09:20\",\"id_modalidade\":\"000010000100001\",\"nome_modalidadade\":\"RESSON\u00c2NCIA\",\"id_procedimento\":\"000010000100002\",\"nome_procedimento\":\"RM - MAMA\",\"endereco\":\"RUA DO TESTE , 0000 - \"} , {\"Id\":134,\"status\":\"EXPIRADO\",\"data_agendado\":\"24\/08\/2020\",\"hora_agendado\":\"09:05\",\"id_modalidade\":\"000010000100001\",\"nome_modalidadade\":\"RESSON\u00c2NCIA\",\"id_procedimento\":\"000010000100005\",\"nome_procedimento\":\"RM - ABDOME TOTAL\",\"endereco\":\"RUA DO TESTE , 0000 - \"}]"}
+12:13:46 - Called /Futurofone/atendimentos?id_cliente=-22: 
+{Parâmetros recebidos: id_cliente=-22 }
+12:13:46 - Called /Futurofone/atendimentos?id_cliente=-22: 
+{Query:
+     SELECT row_to_json(x) AS atendimentos
+	FROM (SELECT DISTINCT
+		AGD."IdAgendamento"		AS "Id",
+		CASE 
+			WHEN PTC."StResultadoDisponivel" = FALSE THEN 'AGENDADO'
+			WHEN STR."IdRegistro" IS NOT NULL THEN 'ATENDIDO'
+			WHEN PTC."DtEntrega" IS NOT NULL THEN 'ENTREGUE'
+			WHEN PTC."StResultadoExpirado" = FALSE THEN 'DISPONÍVEL'
+			ELSE 'EXPIRADO' 
+		END :: CHARACTER VARYING		AS Status
+	, TO_CHAR(AGD."DtAgendamento", 'DD/MM/YYYY')::CHARACTER(10) 	AS  data_agendado
+	, TO_CHAR(AGD."DtAgendamento", 'HH24:MI')::CHARACTER(5) AS hora_agendado
+	, MDL."IdModalidade" AS id_modalidade
+	, MDL."NmModalidade" AS nome_modalidadade
+	, PRD."IdProcedimento" AS id_procedimento
+	, PRD."NmApelido" AS nome_procedimento
+	, (COALESCE(EDR."DsEndereco", '') || ' , ' || COALESCE(EDR."NrEndereco", '') || ' - ' || COALESCE(EDR."NmComplemento", '')) AS endereco
+	FROM		
+		"T0102_Agendamento"				AGD	
+	INNER JOIN
+		"T0199_Procedimento"					PRD
+	ON
+		PRD."IdProcedimento"					= AGD."IdProcedimento"
+	AND PRD."StExclusao"				= FALSE
+	INNER JOIN 
+		"T0199_Modalidade" MDL
+	ON 
+		PRD."IdModalidade" = MDL."IdModalidade"
+	INNER JOIN "T0000_Endereco" EDR
+	ON AGD."IdUnidade" = EDR."IdRegistro"
+	AND EDR."IdEntidadeNegocio" = '0199013'
+	LEFT JOIN
+		"T0102_Atendimento_Agendamento"	AAT
+	ON
+		AAT."IdAgendamento"				= AGD."IdAgendamento"
+	AND AAT."StExclusao"				= FALSE
+	LEFT  JOIN 
+		"T0102_Atendimento" 				ATD
+	ON 
+		ATD."IdAtendimento"					= AAT."IdAtendimento"
+	AND ATD."IdPaciente"					=  AGD."IdPaciente"
+	LEFT JOIN 
+		"T0102_Protocolo" PTC
+	ON 
+		ATD."IdAtendimento" = PTC."IdAtendimento"
+	LEFT JOIN
+		"T0000_AssociacaoRegistros"			ASR
+	ON
+		ASR."IdEntidadeNegocioA"			= '0102009'
+	AND	ASR."IdEntidadeNegocioB"			= '0102012'
+	AND ASR."IdRegistroB"					= PTC."IdProtocolo"::CHARACTER VARYING
+	AND ASR."StExclusao"					= FALSE
+	LEFT JOIN 
+		"T0000_StatusRegistro" 				STR
+	ON
+		STR."IdEntidadeNegocio" 			= '0102009'
+	AND STR."IdRegistro" 					= ASR."IdRegistroA"
+	AND STR."IdEtapa" 						= '0102001005'
+	AND STR."IdStatus" 						= '0102001005001'
+	WHERE 		
+		AGD."IdPaciente"				= -22
+	AND AGD."StExclusao"				= FALSE
+	AND AGD."StCancelado"				= FALSE
+	ORDER BY 
+		AGD."IdAgendamento") x}
+12:14:03 - Called /Futurofone/atendimentos?id_cliente=-22: 
+{Parâmetros recebidos: id_cliente=-22 }
+12:14:03 - Called /Futurofone/atendimentos?id_cliente=-22: 
+{Query:
+     SELECT row_to_json(x) AS atendimentos
+	FROM (SELECT DISTINCT
+		AGD."IdAgendamento"		AS "Id",
+		CASE 
+			WHEN PTC."StResultadoDisponivel" = FALSE THEN 'AGENDADO'
+			WHEN STR."IdRegistro" IS NOT NULL THEN 'ATENDIDO'
+			WHEN PTC."DtEntrega" IS NOT NULL THEN 'ENTREGUE'
+			WHEN PTC."StResultadoExpirado" = FALSE THEN 'DISPONÍVEL'
+			ELSE 'EXPIRADO' 
+		END :: CHARACTER VARYING		AS Status
+	, TO_CHAR(AGD."DtAgendamento", 'DD/MM/YYYY')::CHARACTER(10) 	AS  data_agendado
+	, TO_CHAR(AGD."DtAgendamento", 'HH24:MI')::CHARACTER(5) AS hora_agendado
+	, MDL."IdModalidade" AS id_modalidade
+	, MDL."NmModalidade" AS nome_modalidadade
+	, PRD."IdProcedimento" AS id_procedimento
+	, PRD."NmApelido" AS nome_procedimento
+	, (COALESCE(EDR."DsEndereco", '') || ' , ' || COALESCE(EDR."NrEndereco", '') || ' - ' || COALESCE(EDR."NmComplemento", '')) AS endereco
+	FROM		
+		"T0102_Agendamento"				AGD	
+	INNER JOIN
+		"T0199_Procedimento"					PRD
+	ON
+		PRD."IdProcedimento"					= AGD."IdProcedimento"
+	AND PRD."StExclusao"				= FALSE
+	INNER JOIN 
+		"T0199_Modalidade" MDL
+	ON 
+		PRD."IdModalidade" = MDL."IdModalidade"
+	INNER JOIN "T0000_Endereco" EDR
+	ON AGD."IdUnidade" = EDR."IdRegistro"
+	AND EDR."IdEntidadeNegocio" = '0199013'
+	LEFT JOIN
+		"T0102_Atendimento_Agendamento"	AAT
+	ON
+		AAT."IdAgendamento"				= AGD."IdAgendamento"
+	AND AAT."StExclusao"				= FALSE
+	LEFT  JOIN 
+		"T0102_Atendimento" 				ATD
+	ON 
+		ATD."IdAtendimento"					= AAT."IdAtendimento"
+	AND ATD."IdPaciente"					=  AGD."IdPaciente"
+	LEFT JOIN 
+		"T0102_Protocolo" PTC
+	ON 
+		ATD."IdAtendimento" = PTC."IdAtendimento"
+	LEFT JOIN
+		"T0000_AssociacaoRegistros"			ASR
+	ON
+		ASR."IdEntidadeNegocioA"			= '0102009'
+	AND	ASR."IdEntidadeNegocioB"			= '0102012'
+	AND ASR."IdRegistroB"					= PTC."IdProtocolo"::CHARACTER VARYING
+	AND ASR."StExclusao"					= FALSE
+	LEFT JOIN 
+		"T0000_StatusRegistro" 				STR
+	ON
+		STR."IdEntidadeNegocio" 			= '0102009'
+	AND STR."IdRegistro" 					= ASR."IdRegistroA"
+	AND STR."IdEtapa" 						= '0102001005'
+	AND STR."IdStatus" 						= '0102001005001'
+	WHERE 		
+		AGD."IdPaciente"				= -22
+	AND AGD."StExclusao"				= FALSE
+	AND AGD."StCancelado"				= FALSE
+	ORDER BY 
+		AGD."IdAgendamento") x}

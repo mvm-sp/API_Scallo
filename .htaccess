@@ -1,0 +1,18 @@
+﻿Options +FollowSymLinks
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^(phpinfo/?)$ /phpinfo.php [NC]
+RewriteRule ^(Futurofone/PainelClienteListar/?)$ /rest/api/PainelClienteListar.php [NC]
+RewriteRule ^(Futurofone/GravarLigacao/?)$ /rest/api/GravarLigacao.php [NC]
+RewriteRule ^(Futurofone/CampanhaContatoRetornoAgendaCadastrar/?)$ /rest/api/CampanhaContatoRetornoAgendaCadastrar.php [NC]
+RewriteRule ^(Futurofone/CampanhaContatoListar/?)$ /rest/api/CampanhaContatoListar.php [NC]
+RewriteRule ^(Futurofone/CampanhaContatoRetornoCadastrar/?)$ /rest/api/CampanhaContatoRetornoCadastrar.php [NC]
+RewriteRule ^(Futurofone/SMSReceber/?)$ /rest/api/SMSReceber.php [NC]
+RewriteRule ^(Futurofone/Clientes/?)$ /rest/api/clientes.php [NC]
+RewriteRule ^(Futurofone/Atendimentos/?)$ /rest/api/atendimentos.php [NC]
+RewriteRule ^(Futurofone/Procedimentos/?)$ /rest/api/procedimentos.php [NC]
+RewriteRule ^(Futurofone/Laudos/?)$ /rest/api/laudos.php [NC]
+RewriteRule ^(Futurofone/Preparos/?)$ /rest/api/preparos.php [NC]
+RewriteRule ^(Futurofone/atendimentos/confirmado/?)$ /rest/api/confirma.php [NC]
+RewriteRule ^(Futurofone/atendimentos/cancelado/?)$ /rest/api/cancela.php [NC]
+</IfModule>
